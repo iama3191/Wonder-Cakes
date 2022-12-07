@@ -27,12 +27,45 @@
     {% endblock %}
 
     {% block extra_js %}
+      <script src="https://kit.fontawesome.com/5cf6f031a9.js" crossorigin="anonymous"></script>
     {% endblock %}
 
     <title>Wonder Cakes {% block extra_title %}{% endblock %}</title>
 </head>
   <body>
     <header class="container-fluid fixed-top"></header>
+      <div class="row">
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-lg-left">
+          <a href="{% url 'home' %}" class="nav-link main-logo-ling">
+            <h2 class="logo-font text-black my-0">Wonder Cakes</h2>
+          </a>
+        </div>
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+          <!-- Code from Project-Boutique Ado https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+EA101+2021_T1/courseware/eb05f06e62c64ac89823cc956fcd8191/196e74d3dd5849cd801d319d7095c3eb/?child=first-->
+          <form action="" method="get">
+            <div class="input-group w-100">
+              <input type="text" class="border-black rounded-0 border form-control" name="q" placeholder="Search our product">
+              <div class="input-group-append">
+                <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                  <span class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+          <!-- End of used code -->
+        </div>
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+          <ul class="list-inline list-unstyled text-centar text-lg-right my-0">
+            <li class="list-inline-item dropdown">Login</li>
+            <li class="list-inline-item dropdown">Cart</li>
+            <li class="list-inline-item dropdown">Menu 3</li>
+            <li class="list-inline-item dropdown">Menu 4</li>
+
+          </ul>
+        </div>
+      </div>
 
     {% if messages %}
        <div class="message-container"></div> 
