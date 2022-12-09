@@ -2,12 +2,10 @@ html {
     height: 100%;
 }
 
-body {
-    /* background: url('') no-repeat center center fixed; */
+.hero-image {
+    background: url('/media/hero-image-cake-dripping.jpg') no-repeat top center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    height: 70vh;
 }
 
 /* -------------------------------- Media Queries */
