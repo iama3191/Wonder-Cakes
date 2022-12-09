@@ -3,7 +3,7 @@ html {
 }
 
 .hero-image {
-    background: url('/media/hero-image-background.jpg') no-repeat center center fixed;
+    background: url('/media/hero-image-background.jpg') no-repeat center center;
     /* background-color: rgb(174 230 242); */
     background-size: contain;
     height: 65vh;
@@ -25,7 +25,8 @@ html {
     width: 1.5rem;
 }
 
-.shop-now-button {
+.shop-now-button,
+.btn-black {
     background-color: black;
     color: aliceblue;
 }
