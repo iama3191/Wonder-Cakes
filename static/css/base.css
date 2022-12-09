@@ -3,9 +3,36 @@ html {
 }
 
 .hero-image {
-    background: url('/media/hero-image-cake-dripping.jpg') no-repeat top center fixed;
-    background-size: cover;
-    height: 70vh;
+    background: url('/media/hero-image-background.jpg') no-repeat center center fixed;
+    /* background-color: rgb(174 230 242); */
+    background-size: contain;
+    height: 65vh;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    text-align: right;
+    top: 35%;
+    right: 20%;
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.shop-now-button {
+    background-color: black;
+    color: aliceblue;
+}
+
+.shop-now-button:hover {
+    border: 2px solid black;
+    background: aliceblue;
 }
 
 /* -------------------------------- Media Queries */
@@ -28,7 +55,7 @@ html {
       }
   
       .header-container {
-          padding-top: 164px;
+          padding-top: 100px;
       }
   }
   Footer
