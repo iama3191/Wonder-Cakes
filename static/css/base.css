@@ -1,11 +1,14 @@
-html {
+html, body {
     height: 100%;
+    margin: 0;
+    overflow: hidden;
 }
 
 .hero-image {
     background: url('/media/hero-image-background.jpg') no-repeat center center;
-    /* background-color: rgb(174 230 242); */
-    background-size: contain;
+    background-color: rgb(174 230 242);
+    background-size: cover;
+    width:100%;
     height: 65vh;
     position: relative;
 }
