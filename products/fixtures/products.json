@@ -1,1 +1,665 @@
-[{"pk":1,"models":"products.product","fields":{"sku":"CAWEWH01","name":"Pearl Wedding Cake","description":"One tier wedding cake with white fondant and decorated with edible flowers and pearls. A traditional vanilla flavor with lemon filling","price":190,"category":7,"rating":4.5,"image":"cake001.jpg"}},{"pk":2,"models":"products.product","fields":{"sku":"CANUCH01","name":"Nutella Cake","description":"Chocolate cake with nutella chocolate filling, decorated with white chocolate figure and chocolate icing","price":55,"category":6,"rating":4.4,"image":"cake002.jpg"}},{"pk":3,"models":"products.product","fields":{"sku":"CUFLBU06","name":"Confetti Vanilla Cupcakes","description":"Cupcakes with colorful icing and confetti. Available flavors: banana, pumpkin, chocolate, lemon, red velvet (6 Units)","price":10,"category":3,"rating":4.3,"image":"cake003.jpg"}},{"pk":4,"models":"products.product","fields":{"sku":"CAEABL02","name":"Easter Bunny Blue Cake","description":"Two layer easter cake with a rich carrot flavor and a buttercream blue icing, decorated with fondant bunnies and colorful sprinkles","price":70,"category":4,"rating":4.5,"image":"cake004.jpg"}},{"pk":5,"models":"products.product","fields":{"sku":"CAQUWP02","name":"XOXO Cake","description":"Two layer cake with white fondant, decorated with pink  buttercream icing and chocolate dripping. Available flavor: red velvet, chocolate, and vanilla","price":70,"category":5,"rating":4.8,"image":"cake005.jpg"}},{"pk":6,"models":"products.product","fields":{"sku":"CABIOR03","name":"Oreo Birthday Cake","description":"Three layer cake with oreo icing, decorated with oreo cookies, pink chocolate dripping, and sprinkles. Available flavor: Vanilla and chocolate","price":70,"category":2,"rating":4.9,"image":"cake006.jpg"}},{"pk":7,"models":"products.product","fields":{"sku":"CAESGR02","name":"Easter Bunny Green Cake","description":"Two layer easter cake with a rich carrot flavor with green fondant. Decorated with a buttercream white bunny","price":70,"category":4,"rating":4.3,"image":"cake007.jpg"}},{"pk":8,"models":"products.product","fields":{"sku":"CAQURD01","name":"Red Velvet Cake","description":"Rich red velvet cake, with pink buttercream icing","price":50,"category":6,"rating":4.6,"image":"cake008.jpg"}},{"pk":9,"models":"products.product","fields":{"sku":"CAEACA01","name":"Easter Carrot Cake","description":"Carrot cake with buttercream icing and decorated with fondant carrots","price":60,"category":4,"rating":4.3,"image":"cake009.jpg"}},{"pk":10,"models":"products.product","fields":{"sku":"CAQUFE01","name":"Ferrero Cake","description":"Rich Ferrero chocolate cake, decorated with sliced hazelnuts","price":50,"category":6,"rating":5,"image":"cake010.jpg"}},{"pk":11,"models":"products.product","fields":{"sku":"CAQUWR01","name":"White and Red Cake","description":"White Chocolate and red velvet cake, with a white chocolate icing and red velvet crumbs","price":50,"category":6,"rating":4.3,"image":"cake011.jpg"}},{"pk":12,"models":"products.product","fields":{"sku":"CAQUPC01","name":"Peanut Butter & Chocolate Cake","description":"Dark chocolate cake with peanut butter, and chocolate icing as decoration","price":45,"category":6,"rating":4.6,"image":"cake012.jpg"}},{"pk":13,"models":"products.product","fields":{"sku":"CASOWH01","name":"Graduation Fondant Cake","description":"Traditional vanilla cake with chocolate cream filling, and white fondant","price":70,"category":4,"rating":4.3,"image":"cake013.jpg"}},{"pk":14,"models":"products.product","fields":{"sku":"CAWEWF04","name":"Floral Wedding Cake","description":"Multi-tier wedding cake decorated with edible pink and white roses. Available Flavors: Lemon, vanilla, and red velvet","price":500,"category":7,"rating":4.8,"image":"cake014.jpg"}},{"pk":15,"models":"products.product","fields":{"sku":"CABSPB01","name":"Pink & Blue Baby Shower Cake","description":"Traditional vanilla cake with white icing, and decorated with pink and blue shells","price":70,"category":1,"rating":4.7,"image":"cake015.jpg"}},{"pk":16,"models":"products.product","fields":{"sku":"CAWEWF02","name":"Elegant White Cake","description":"Two layer cake with white icing and decorated with real flowers. Available flavors: Lemon, vanilla and red velvet","price":100,"category":7,"rating":4.8,"image":"cake016.jpg"}},{"pk":17,"models":"products.product","fields":{"sku":"CABSBL03","name":"Baby Blue Cake","description":"Three layer chocolate cake with a blue icing and white chocolate dripping decoration","price":60,"category":1,"rating":4.5,"image":"cake017.jpg"}},{"pk":18,"models":"products.product","fields":{"sku":"CAWEWH02","name":"Spring Wedding Cake","description":"Two tier white cake with edible flowers in spring colors","price":200,"category":7,"rating":4.2,"image":"cake018.jpg"}},{"pk":18,"models":"products.product","fields":{"sku":"CAWEWH02","name":"Spring Wedding Cake","description":"Two tier white cake with edible flowers in spring colors","price":200,"category":7,"rating":4.2,"image":"cake018.jpg"}},{"pk":19,"models":"products.product","fields":{"sku":"CUFLCH06","name":"Christmas Cupcakes","description":"Cupcakes with buttercream icing decoration as a Christmas Tree. Available flavors: Banana, pumpkin, chocolate, lemon, and red velvet. (6 units)","price":18,"category":3,"rating":4.8,"image":"cake019.jpg"}},{"pk":20,"models":"products.product","fields":{"sku":"CUCHBU06","name":"Love Cupcakes","description":"Dark chocolate cupcakes with  white lemon buttercream and candy heart. (6 units)","price":10,"category":3,"rating":4.8,"image":"cake020.jpg"}},{"pk":21,"models":"products.product","fields":{"sku":"CUSAFO06","name":"Safari Cupcakes","description":"Vanilla cupcakes with beautiful safari animal decorations, made with fondant. (6 units)","price":20,"category":3,"rating":4.6,"image":"cake021.jpg"}},{"pk":22,"models":"products.product","fields":{"sku":"CABIBG03","name":"Blue & Gold King Cake","description":"Three tier cake with blue fondant decoration and painted golden crowns. Available flavors: Lemon, vanilla, chocolate and red velvet","price":500,"category":2,"rating":4.7,"image":"cake022.jpg"}},{"pk":23,"models":"products.product","fields":{"sku":"CUMIBU06","name":"Chocolate Mint Cupcakes","description":"Dark Chocolate and mint buttercream icing cupcake. (6 units)","price":10,"category":3,"rating":4.1,"image":"cake023.jpg"}},{"pk":24,"models":"products.product","fields":{"sku":"CUFEBU062","name":"Ferrero Cupcakes","description":"Chocolate cupcakes with Ferrero cream filling and hazelnut topping. (6 units)","price":20,"category":3,"rating":4.8,"image":"cake024.jpg"}},{"pk":25,"models":"products.product","fields":{"sku":"CAQUPI01","name":"Pink Roses Cake","description":"Cake with pink buttercream roses as decoration. Available Flavor: Lemon, vanilla, chocolate and red velvet","price":70,"category":2,"rating":4.4,"image":"cake025.jpg"}},{"pk":27,"models":"products.product","fields":{"sku":"CUFLWP06","name":"Pink & White Cupcakes","description":"Cupcakes with pink icing, and pink and white heart candies. Available flavors: Banana, pumpkin, chocolate, lemon, and red velvet. (6 units)","price":10,"category":3,"rating":4.5,"image":"cake027.jpg"}},{"pk":28,"models":"products.product","fields":{"sku":"CURVBU06","name":"Cupid Cupcakes","description":"Red velvet cupcakes with a white chocolate buttercream and red velvet crumbs. (6 units)","price":10,"category":3,"rating":4.6,"image":"cake028.jpg"}},{"pk":29,"models":"products.product","fields":{"sku":"CAQUVA01","name":"Bird Cake","description":"Traditional vanilla cake with a bird decoration, made of buttercream.","price":70,"category":6,"rating":4,"image":"cake029.jpg"}},{"pk":31,"models":"products.product","fields":{"sku":"CAQUCC01","name":"Chocolate & Cherry Cake","description":"Dark chocolate  cake with a cherry filling, decorated with buttercream, chocolate and cherries","price":70,"category":6,"rating":3.9,"image":"cake031.jpg"}},{"pk":33,"models":"products.product","fields":{"sku":"CAQULE01","name":"Lemon Cake","description":"Lemon cake with vanilla cookies crumbs as decoration","price":50,"category":6,"rating":4,"image":"cake033.jpg"}},{"pk":34,"models":"products.product","fields":{"sku":"CABSPI01","name":"Girly Pink Cake","description":"Traditional vanilla cake, decorated with pink fondant and baby bear","price":80,"category":1,"rating":4.3,"image":"cake034.jpg"}},{"pk":35,"models":"products.product","fields":{"sku":"CAQUCH01","name":"Chocolate Temptation Cake","description":"Dark chocolate cake with chocolate truffles as topping, and cacao powder","price":50,"category":6,"rating":4.6,"image":"cake035.jpg"}},{"pk":36,"models":"products.product","fields":{"sku":"CAQUCH02","name":"Choco Cake","description":"Chocolate cake with white chocolate cream filling, and chocolate icing","price":50,"category":6,"rating":4.5,"image":"cake036.jpg"}},{"pk":37,"models":"products.product","fields":{"sku":"CAQUWS01","name":"Strawberry Cake","description":"Vanilla cake with strawberry filling, buttercream icing and fresh strawberries as decoration","price":70,"category":6,"rating":4.7,"image":"cake037.jpg"}},{"pk":38,"models":"products.product","fields":{"sku":"CURFBU06","name":"Red Fruits Cupcakes","description":"Vanilla cupcakes with buttercream and fresh red fruits. (6 units)","price":10,"category":3,"rating":4.6,"image":"cake038.jpg"}},{"pk":39,"models":"products.product","fields":{"sku":"CABIBL01","name":"Blue Birthday Cake","description":"Traditional vanilla cake with chocolate mousse filling and blue fondant","price":80,"category":2,"rating":4.6,"image":"cake039.jpg"}},{"pk":40,"models":"products.product","fields":{"sku":"CABSBL02","name":"It’s a… Cake","description":"Two tier vanilla cake with strawberry filling, and with blue buttercream icing and sprinkles","price":70,"category":1,"rating":4.8,"image":"cake040.jpg"}},{"pk":41,"models":"products.product","fields":{"sku":"CAQUWB01","name":"White & Black Cake","description":"Dark chocolate cake with white buttercream icing and chocolate decorations","price":50,"category":6,"rating":4.8,"image":"cake041.jpg"}},{"pk":42,"models":"products.product","fields":{"sku":"CUFIWB06","name":"White & Black Cupcakes","description":"Chocolate cupcakes with vanilla cream filling, decorated with white chocolate buttercream icing, and chocolate drops. (6 units)","price":10,"category":3,"rating":4.5,"image":"cake042.jpg"}},{"pk":43,"models":"products.product","fields":{"sku":"CAQUDC06","name":"Double Chocolate Cake","description":"White chocolate cake with dark chocolate filling and chocolate icing","price":50,"category":6,"rating":4.3,"image":"cake043.jpg"}},{"pk":44,"models":"products.product","fields":{"sku":"CAWELI01","name":"Lilac Wedding Cake","description":"Traditional vanilla cake with white buttercream icing. Pink and lilac flowers as main decoration for this simple but elegant wedding cake","price":150,"category":7,"rating":4.2,"image":"cake044.jpg"}},{"pk":45,"models":"products.product","fields":{"sku":"CAROWH01","name":"I Love U Cake","description":"Red velvet cake with strawberry cream filling, white fondant and a married couple of bears with hearts as decoration","price":80,"category":5,"rating":4.6,"image":"cake045.jpg"}},{"pk":46,"models":"products.product","fields":{"sku":"CAQUSW01","name":"Snow White Cake","description":"Dark Chocolate cake with vanilla cream filling, vanilla buttercream icing and fresh strawberries","price":50,"category":6,"rating":4.2,"image":"cake046.jpg"}},{"pk":47,"models":"products.product","fields":{"sku":"CUCMBU06","name":"Bear Cupcakes","description":"Chocolate cupcakes with marshmallow cream filling, white buttercream icing and bear decorations, made of fondant","price":20,"category":3,"rating":4.6,"image":"cake047.jpg"}},{"pk":47,"models":"products.product","fields":{"sku":"CUCMBU06","name":"Bear Cupcakes","description":"Chocolate cupcakes with marshmallow cream filling, white buttercream icing and bear decorations, made of fondant. (6 units)","price":20,"category":3,"rating":4.6,"image":"cake047.jpg"}},{"pk":48,"models":"products.product","fields":{"sku":"CASOGH01","name":"Ginger House Cake","description":"Vanilla cake with pumpkin spice cream filling, decorated with white icing and gingerbread house and cookie","price":80,"category":4,"rating":4.3,"image":"cake048.jpg"}},{"pk":49,"models":"products.product","fields":{"sku":"CASOPS01","name":"Pumpkin Spice Cake","description":"Pumpkin spice flavor cake with white icing and christmas decoration","price":70,"category":4,"rating":4.6,"image":"cake049.jpg"}},{"pk":50,"models":"products.product","fields":{"sku":"CABIPI01","name":"Pink Birthday Cake","description":"Traditional vanilla cake with forest fruit cream filling, white icing and decorated with fruits","price":50,"category":6,"rating":4.3,"image":"cake050.jpg"}},{"pk":51,"models":"products.product","fields":{"sku":"CASODW01","name":"White Chocolate Cake","description":"Traditional vanilla cake with white icing and white chocolate decoration","price":70,"category":4,"rating":4.5,"image":"cake051.jpg"}},{"pk":52,"models":"products.product","fields":{"sku":"CAQUPJ01","name":"Peanut Butter & Jam Cake","description":"Peanut butter cake with a jam filling, decorated with glazed donuts","price":70,"category":6,"rating":4.6,"image":"cake052.jpg"}}]
+[
+    {
+      "pk": 1,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAWEWH01",
+        "name": "Pearl Wedding Cake",
+        "description": "One tier wedding cake with white fondant and decorated with edible flowers and pearls. A traditional vanilla flavor with lemon filling",
+        "price": 190,
+        "category": 7,
+        "rating": 4.5,
+        "image": "cake001.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "models": "products.product",
+      "fields": {
+        "sku": "CANUCH01",
+        "name": "Nutella Cake",
+        "description": "Chocolate cake with nutella chocolate filling, decorated with white chocolate figure and chocolate icing",
+        "price": 55,
+        "category": 6,
+        "rating": 4.4,
+        "image": "cake002.jpg"
+      }
+    },
+    {
+      "pk": 3,
+      "models": "products.product",
+      "fields": {
+        "sku": "CUFLBU06",
+        "name": "Confetti Vanilla Cupcakes",
+        "description": "Cupcakes with colorful icing and confetti. Available flavors: banana, pumpkin, chocolate, lemon, red velvet (6 Units)",
+        "price": 10,
+        "category": 3,
+        "rating": 4.3,
+        "image": "cake003.jpg"
+      }
+    },
+    {
+      "pk": 4,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAEABL02",
+        "name": "Easter Bunny Blue Cake",
+        "description": "Two layer easter cake with a rich carrot flavor and a buttercream blue icing, decorated with fondant bunnies and colorful sprinkles",
+        "price": 70,
+        "category": 4,
+        "rating": 4.5,
+        "image": "cake004.jpg"
+      }
+    },
+    {
+      "pk": 5,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUWP02",
+        "name": "XOXO Cake",
+        "description": "Two layer cake with white fondant, decorated with pink  buttercream icing and chocolate dripping. Available flavor: red velvet, chocolate, and vanilla",
+        "price": 70,
+        "category": 5,
+        "rating": 4.8,
+        "image": "cake005.jpg"
+      }
+    },
+    {
+      "pk": 6,
+      "models": "products.product",
+      "fields": {
+        "sku": "CABIOR03",
+        "name": "Oreo Birthday Cake",
+        "description": "Three layer cake with oreo icing, decorated with oreo cookies, pink chocolate dripping, and sprinkles. Available flavor: Vanilla and chocolate",
+        "price": 70,
+        "category": 2,
+        "rating": 4.9,
+        "image": "cake006.jpg"
+      }
+    },
+    {
+      "pk": 7,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAESGR02",
+        "name": "Easter Bunny Green Cake",
+        "description": "Two layer easter cake with a rich carrot flavor with green fondant. Decorated with a buttercream white bunny",
+        "price": 70,
+        "category": 4,
+        "rating": 4.3,
+        "image": "cake007.jpg"
+      }
+    },
+    {
+      "pk": 8,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQURD01",
+        "name": "Red Velvet Cake",
+        "description": "Rich red velvet cake, with pink buttercream icing",
+        "price": 50,
+        "category": 6,
+        "rating": 4.6,
+        "image": "cake008.jpg"
+      }
+    },
+    {
+      "pk": 9,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAEACA01",
+        "name": "Easter Carrot Cake",
+        "description": "Carrot cake with buttercream icing and decorated with fondant carrots",
+        "price": 60,
+        "category": 4,
+        "rating": 4.3,
+        "image": "cake009.jpg"
+      }
+    },
+    {
+      "pk": 10,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUFE01",
+        "name": "Ferrero Cake",
+        "description": "Rich Ferrero chocolate cake, decorated with sliced hazelnuts",
+        "price": 50,
+        "category": 6,
+        "rating": 5,
+        "image": "cake010.jpg"
+      }
+    },
+    {
+      "pk": 11,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUWR01",
+        "name": "White and Red Cake",
+        "description": "White Chocolate and red velvet cake, with a white chocolate icing and red velvet crumbs",
+        "price": 50,
+        "category": 6,
+        "rating": 4.3,
+        "image": "cake011.jpg"
+      }
+    },
+    {
+      "pk": 12,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUPC01",
+        "name": "Peanut Butter & Chocolate Cake",
+        "description": "Dark chocolate cake with peanut butter, and chocolate icing as decoration",
+        "price": 45,
+        "category": 6,
+        "rating": 4.6,
+        "image": "cake012.jpg"
+      }
+    },
+    {
+      "pk": 13,
+      "models": "products.product",
+      "fields": {
+        "sku": "CASOWH01",
+        "name": "Graduation Fondant Cake",
+        "description": "Traditional vanilla cake with chocolate cream filling, and white fondant",
+        "price": 70,
+        "category": 4,
+        "rating": 4.3,
+        "image": "cake013.jpg"
+      }
+    },
+    {
+      "pk": 14,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAWEWF04",
+        "name": "Floral Wedding Cake",
+        "description": "Multi-tier wedding cake decorated with edible pink and white roses. Available Flavors: Lemon, vanilla, and red velvet",
+        "price": 500,
+        "category": 7,
+        "rating": 4.8,
+        "image": "cake014.jpg"
+      }
+    },
+    {
+      "pk": 15,
+      "models": "products.product",
+      "fields": {
+        "sku": "CABSPB01",
+        "name": "Pink & Blue Baby Shower Cake",
+        "description": "Traditional vanilla cake with white icing, and decorated with pink and blue shells",
+        "price": 70,
+        "category": 1,
+        "rating": 4.7,
+        "image": "cake015.jpg"
+      }
+    },
+    {
+      "pk": 16,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAWEWF02",
+        "name": "Elegant White Cake",
+        "description": "Two layer cake with white icing and decorated with real flowers. Available flavors: Lemon, vanilla and red velvet",
+        "price": 100,
+        "category": 7,
+        "rating": 4.8,
+        "image": "cake016.jpg"
+      }
+    },
+    {
+      "pk": 17,
+      "models": "products.product",
+      "fields": {
+        "sku": "CABSBL03",
+        "name": "Baby Blue Cake",
+        "description": "Three layer chocolate cake with a blue icing and white chocolate dripping decoration",
+        "price": 60,
+        "category": 1,
+        "rating": 4.5,
+        "image": "cake017.jpg"
+      }
+    },
+    {
+      "pk": 18,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAWEWH02",
+        "name": "Spring Wedding Cake",
+        "description": "Two tier white cake with edible flowers in spring colors",
+        "price": 200,
+        "category": 7,
+        "rating": 4.2,
+        "image": "cake018.jpg"
+      }
+    },
+    {
+      "pk": 18,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAWEWH02",
+        "name": "Spring Wedding Cake",
+        "description": "Two tier white cake with edible flowers in spring colors",
+        "price": 200,
+        "category": 7,
+        "rating": 4.2,
+        "image": "cake018.jpg"
+      }
+    },
+    {
+      "pk": 19,
+      "models": "products.product",
+      "fields": {
+        "sku": "CUFLCH06",
+        "name": "Christmas Cupcakes",
+        "description": "Cupcakes with buttercream icing decoration as a Christmas Tree. Available flavors: Banana, pumpkin, chocolate, lemon, and red velvet. (6 units)",
+        "price": 18,
+        "category": 3,
+        "rating": 4.8,
+        "image": "cake019.jpg"
+      }
+    },
+    {
+      "pk": 20,
+      "models": "products.product",
+      "fields": {
+        "sku": "CUCHBU06",
+        "name": "Love Cupcakes",
+        "description": "Dark chocolate cupcakes with  white lemon buttercream and candy heart. (6 units)",
+        "price": 10,
+        "category": 3,
+        "rating": 4.8,
+        "image": "cake020.jpg"
+      }
+    },
+    {
+      "pk": 21,
+      "models": "products.product",
+      "fields": {
+        "sku": "CUSAFO06",
+        "name": "Safari Cupcakes",
+        "description": "Vanilla cupcakes with beautiful safari animal decorations, made with fondant. (6 units)",
+        "price": 20,
+        "category": 3,
+        "rating": 4.6,
+        "image": "cake021.jpg"
+      }
+    },
+    {
+      "pk": 22,
+      "models": "products.product",
+      "fields": {
+        "sku": "CABIBG03",
+        "name": "Blue & Gold King Cake",
+        "description": "Three tier cake with blue fondant decoration and painted golden crowns. Available flavors: Lemon, vanilla, chocolate and red velvet",
+        "price": 500,
+        "category": 2,
+        "rating": 4.7,
+        "image": "cake022.jpg"
+      }
+    },
+    {
+      "pk": 23,
+      "models": "products.product",
+      "fields": {
+        "sku": "CUMIBU06",
+        "name": "Chocolate Mint Cupcakes",
+        "description": "Dark Chocolate and mint buttercream icing cupcake. (6 units)",
+        "price": 10,
+        "category": 3,
+        "rating": 4.1,
+        "image": "cake023.jpg"
+      }
+    },
+    {
+      "pk": 24,
+      "models": "products.product",
+      "fields": {
+        "sku": "CUFEBU062",
+        "name": "Ferrero Cupcakes",
+        "description": "Chocolate cupcakes with Ferrero cream filling and hazelnut topping. (6 units)",
+        "price": 20,
+        "category": 3,
+        "rating": 4.8,
+        "image": "cake024.jpg"
+      }
+    },
+    {
+      "pk": 25,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUPI01",
+        "name": "Pink Roses Cake",
+        "description": "Cake with pink buttercream roses as decoration. Available Flavor: Lemon, vanilla, chocolate and red velvet",
+        "price": 70,
+        "category": 2,
+        "rating": 4.4,
+        "image": "cake025.jpg"
+      }
+    },
+    {
+      "pk": 27,
+      "models": "products.product",
+      "fields": {
+        "sku": "CUFLWP06",
+        "name": "Pink & White Cupcakes",
+        "description": "Cupcakes with pink icing, and pink and white heart candies. Available flavors: Banana, pumpkin, chocolate, lemon, and red velvet. (6 units)",
+        "price": 10,
+        "category": 3,
+        "rating": 4.5,
+        "image": "cake027.jpg"
+      }
+    },
+    {
+      "pk": 28,
+      "models": "products.product",
+      "fields": {
+        "sku": "CURVBU06",
+        "name": "Cupid Cupcakes",
+        "description": "Red velvet cupcakes with a white chocolate buttercream and red velvet crumbs. (6 units)",
+        "price": 10,
+        "category": 3,
+        "rating": 4.6,
+        "image": "cake028.jpg"
+      }
+    },
+    {
+      "pk": 29,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUVA01",
+        "name": "Bird Cake",
+        "description": "Traditional vanilla cake with a bird decoration, made of buttercream.",
+        "price": 70,
+        "category": 6,
+        "rating": 4,
+        "image": "cake029.jpg"
+      }
+    },
+    {
+      "pk": 31,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUCC01",
+        "name": "Chocolate & Cherry Cake",
+        "description": "Dark chocolate  cake with a cherry filling, decorated with buttercream, chocolate and cherries",
+        "price": 70,
+        "category": 6,
+        "rating": 3.9,
+        "image": "cake031.jpg"
+      }
+    },
+    {
+      "pk": 33,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQULE01",
+        "name": "Lemon Cake",
+        "description": "Lemon cake with vanilla cookies crumbs as decoration",
+        "price": 50,
+        "category": 6,
+        "rating": 4,
+        "image": "cake033.jpg"
+      }
+    },
+    {
+      "pk": 34,
+      "models": "products.product",
+      "fields": {
+        "sku": "CABSPI01",
+        "name": "Girly Pink Cake",
+        "description": "Traditional vanilla cake, decorated with pink fondant and baby bear",
+        "price": 80,
+        "category": 1,
+        "rating": 4.3,
+        "image": "cake034.jpg"
+      }
+    },
+    {
+      "pk": 35,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUCH01",
+        "name": "Chocolate Temptation Cake",
+        "description": "Dark chocolate cake with chocolate truffles as topping, and cacao powder",
+        "price": 50,
+        "category": 6,
+        "rating": 4.6,
+        "image": "cake035.jpg"
+      }
+    },
+    {
+      "pk": 36,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUCH02",
+        "name": "Choco Cake",
+        "description": "Chocolate cake with white chocolate cream filling, and chocolate icing",
+        "price": 50,
+        "category": 6,
+        "rating": 4.5,
+        "image": "cake036.jpg"
+      }
+    },
+    {
+      "pk": 37,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUWS01",
+        "name": "Strawberry Cake",
+        "description": "Vanilla cake with strawberry filling, buttercream icing and fresh strawberries as decoration",
+        "price": 70,
+        "category": 6,
+        "rating": 4.7,
+        "image": "cake037.jpg"
+      }
+    },
+    {
+      "pk": 38,
+      "models": "products.product",
+      "fields": {
+        "sku": "CURFBU06",
+        "name": "Red Fruits Cupcakes",
+        "description": "Vanilla cupcakes with buttercream and fresh red fruits. (6 units)",
+        "price": 10,
+        "category": 3,
+        "rating": 4.6,
+        "image": "cake038.jpg"
+      }
+    },
+    {
+      "pk": 39,
+      "models": "products.product",
+      "fields": {
+        "sku": "CABIBL01",
+        "name": "Blue Birthday Cake",
+        "description": "Traditional vanilla cake with chocolate mousse filling and blue fondant",
+        "price": 80,
+        "category": 2,
+        "rating": 4.6,
+        "image": "cake039.jpg"
+      }
+    },
+    {
+      "pk": 40,
+      "models": "products.product",
+      "fields": {
+        "sku": "CABSBL02",
+        "name": "It’s a… Cake",
+        "description": "Two tier vanilla cake with strawberry filling, and with blue buttercream icing and sprinkles",
+        "price": 70,
+        "category": 1,
+        "rating": 4.8,
+        "image": "cake040.jpg"
+      }
+    },
+    {
+      "pk": 41,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUWB01",
+        "name": "White & Black Cake",
+        "description": "Dark chocolate cake with white buttercream icing and chocolate decorations",
+        "price": 50,
+        "category": 6,
+        "rating": 4.8,
+        "image": "cake041.jpg"
+      }
+    },
+    {
+      "pk": 42,
+      "models": "products.product",
+      "fields": {
+        "sku": "CUFIWB06",
+        "name": "White & Black Cupcakes",
+        "description": "Chocolate cupcakes with vanilla cream filling, decorated with white chocolate buttercream icing, and chocolate drops. (6 units)",
+        "price": 10,
+        "category": 3,
+        "rating": 4.5,
+        "image": "cake042.jpg"
+      }
+    },
+    {
+      "pk": 43,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUDC06",
+        "name": "Double Chocolate Cake",
+        "description": "White chocolate cake with dark chocolate filling and chocolate icing",
+        "price": 50,
+        "category": 6,
+        "rating": 4.3,
+        "image": "cake043.jpg"
+      }
+    },
+    {
+      "pk": 44,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAWELI01",
+        "name": "Lilac Wedding Cake",
+        "description": "Traditional vanilla cake with white buttercream icing. Pink and lilac flowers as main decoration for this simple but elegant wedding cake",
+        "price": 150,
+        "category": 7,
+        "rating": 4.2,
+        "image": "cake044.jpg"
+      }
+    },
+    {
+      "pk": 45,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAROWH01",
+        "name": "I Love U Cake",
+        "description": "Red velvet cake with strawberry cream filling, white fondant and a married couple of bears with hearts as decoration",
+        "price": 80,
+        "category": 5,
+        "rating": 4.6,
+        "image": "cake045.jpg"
+      }
+    },
+    {
+      "pk": 46,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUSW01",
+        "name": "Snow White Cake",
+        "description": "Dark Chocolate cake with vanilla cream filling, vanilla buttercream icing and fresh strawberries",
+        "price": 50,
+        "category": 6,
+        "rating": 4.2,
+        "image": "cake046.jpg"
+      }
+    },
+    {
+      "pk": 47,
+      "models": "products.product",
+      "fields": {
+        "sku": "CUCMBU06",
+        "name": "Bear Cupcakes",
+        "description": "Chocolate cupcakes with marshmallow cream filling, white buttercream icing and bear decorations, made of fondant",
+        "price": 20,
+        "category": 3,
+        "rating": 4.6,
+        "image": "cake047.jpg"
+      }
+    },
+    {
+      "pk": 47,
+      "models": "products.product",
+      "fields": {
+        "sku": "CUCMBU06",
+        "name": "Bear Cupcakes",
+        "description": "Chocolate cupcakes with marshmallow cream filling, white buttercream icing and bear decorations, made of fondant. (6 units)",
+        "price": 20,
+        "category": 3,
+        "rating": 4.6,
+        "image": "cake047.jpg"
+      }
+    },
+    {
+      "pk": 48,
+      "models": "products.product",
+      "fields": {
+        "sku": "CASOGH01",
+        "name": "Ginger House Cake",
+        "description": "Vanilla cake with pumpkin spice cream filling, decorated with white icing and gingerbread house and cookie",
+        "price": 80,
+        "category": 4,
+        "rating": 4.3,
+        "image": "cake048.jpg"
+      }
+    },
+    {
+      "pk": 49,
+      "models": "products.product",
+      "fields": {
+        "sku": "CASOPS01",
+        "name": "Pumpkin Spice Cake",
+        "description": "Pumpkin spice flavor cake with white icing and christmas decoration",
+        "price": 70,
+        "category": 4,
+        "rating": 4.6,
+        "image": "cake049.jpg"
+      }
+    },
+    {
+      "pk": 50,
+      "models": "products.product",
+      "fields": {
+        "sku": "CABIPI01",
+        "name": "Pink Birthday Cake",
+        "description": "Traditional vanilla cake with forest fruit cream filling, white icing and decorated with fruits",
+        "price": 50,
+        "category": 6,
+        "rating": 4.3,
+        "image": "cake050.jpg"
+      }
+    },
+    {
+      "pk": 51,
+      "models": "products.product",
+      "fields": {
+        "sku": "CASODW01",
+        "name": "White Chocolate Cake",
+        "description": "Traditional vanilla cake with white icing and white chocolate decoration",
+        "price": 70,
+        "category": 4,
+        "rating": 4.5,
+        "image": "cake051.jpg"
+      }
+    },
+    {
+      "pk": 52,
+      "models": "products.product",
+      "fields": {
+        "sku": "CAQUPJ01",
+        "name": "Peanut Butter & Jam Cake",
+        "description": "Peanut butter cake with a jam filling, decorated with glazed donuts",
+        "price": 70,
+        "category": 6,
+        "rating": 4.6,
+        "image": "cake052.jpg"
+      }
+    }
+  ]
