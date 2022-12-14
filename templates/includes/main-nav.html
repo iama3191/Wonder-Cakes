@@ -20,13 +20,13 @@
               Category
             </a>
             <ul class="dropdown-menu border-0 rounded-0" aria-labelledby="categories-link">
-              <li><a class="dropdown-item" href="#">Anniversary Cakes</a></li>
-              <li><a class="dropdown-item" href="#">Baby Shower Cakes</a></li>
-              <li><a class="dropdown-item" href="#">Birthday Cakes</a></li>
-              <li><a class="dropdown-item" href="#">Other Cakes</a></li>
-              <li><a class="dropdown-item" href="#">Romantic Cakes</a></li>
-              <li><a class="dropdown-item" href="#">Quick Cakes</a></li>
-              <li><a class="dropdown-item" href="#">Wedding Cakes</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=baby_shower %}">Baby Shower Cakes</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=birthday %}">Birthday Cakes</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=cupcakes %}">Cupcakes</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=special,occasion %}">Special Occasion Cakes</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=romantic %}">Romantic Cakes</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=quick %}">Quick Cakes</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=wedding %}">Wedding Cakes</a></li>
             </ul>
           </li>
 
