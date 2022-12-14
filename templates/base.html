@@ -48,7 +48,7 @@
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-sm-none d-md-block d-none d-sm-block">
           <!-- Code from Project-Boutique Ado https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+EA101+2021_T1/courseware/eb05f06e62c64ac89823cc956fcd8191/196e74d3dd5849cd801d319d7095c3eb/?child=first-->
-          <form action="" method="get">
+          <form action="{% url 'products' %}" method="get">
             <div class="input-group w-100">
               <input type="text" class="border-black rounded-0 border form-control" name="q" placeholder="Search our product">
               <div class="input-group-append">
@@ -92,7 +92,7 @@
                           {% if grand_total %}
                               ${{ grand_total|floatformat:2 }}
                           {% else %}
-                              $0.00
+                              €0.00
                           {% endif %}
                       </p>
                   </div>
@@ -111,7 +111,7 @@
     </div>
     <div id="delivery-banner" class="row text-center bg-black">
       <div class="col text-white">
-          <h4 class="logo-font my-1">Free delivery on orders over ${{ free_shipping_threshold }}!</h4>                
+          <h4 class="logo-font my-1">Free delivery on orders over €{{ free_shipping_threshold }}!</h4>                
       </div>            
   </div>
 
