@@ -1,9 +1,9 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse, HttpResponse
 
 
 def view_bag(request):
     """A view to return the shopping bag page"""
-    
+   
     return render(request, 'bag/bag.html')
 
 
@@ -34,3 +34,55 @@ def add_to_bag(request, item_id):
 
     request.session['bag'] = bag
     return redirect(redirect_url)
+
+
+def edit_bag(request, item_id):
+    """ Update (adding or removing) the quantity of the 
+    product to the shopping bag """
+
+    quantity = int(request.POST.get('quantity'))
+    flavor = None
+
+    if 'product_flavor' in request.POST:
+        flavor = request.POST['product_flavor']
+    bag = request.session.get('bag', {})
+
+    if flavor:
+        if quantity > 0:
+            bag[item_id]['items_by_flavor'][flavor] = quantity
+        else:
+            del bag[item_id]['items_by_flavor'][flavor]
+            if not bag[item_id]['items_by_flavor']:
+                bag.pop(item_id)
+    else:
+        if quantity > 0:
+            bag[item_id] = quantity
+        else:
+            bag.pop(item_id)
+
+    request.session['bag'] = bag
+    return redirect(reverse('view_bag'))
+
+
+def remove_from_bag(request, item_id):
+    """ Remove the product from the shopping bag """
+
+    try:
+        flavor = None
+        if 'product_flavor' in request.POST:
+            flavor = request.POST['product_flavor']
+        bag = request.session.get('bag', {})
+
+        if flavor:
+            del bag[item_id]['items_by_flavor'][flavor]
+            if not bag[item_id]['items_by_flavor']:
+                bag.pop(item_id)
+
+        else:
+            bag.pop(item_id)
+
+        request.session['bag'] = bag
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        return HttpResponse(status=500)
