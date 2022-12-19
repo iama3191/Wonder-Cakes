@@ -74,6 +74,11 @@ html, body {
 .remove-item {
     cursor: pointer;
 }
+
+.custom-toast {
+    overflow: visible;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

@@ -3,7 +3,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-
     <!-- Required meta tags -->
     {% block meta %}
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -36,9 +35,9 @@
     {% endblock %}
 
     <title>Wonder Cakes {% block extra_title %}{% endblock %}</title>
-</head>
+  </head>
   <body>
-    <header class="container-fluid fixed-top"></header>
+    <header class="container-fluid fixed-top">
       <div class="row bg-white pt-lg-2 d-flex" id="top-nav">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left d-sm-none d-md-block d-none d-sm-block">
           <a href="{% url 'home' %}" class="nav-link main-logo-ling">
@@ -98,7 +97,7 @@
               </a>
             </li>
           </ul>
-      </div>
+        </div>
       <div class="row bg-white">
         <nav class="navbar navbar-expand-lg navbar-light w-100 ms-4">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-pressed="true" aria-expanded="false" aria-label="Toggle navigation">
@@ -107,15 +106,20 @@
             {% include 'includes/mobile-top-header.html' %}
             {% include 'includes/main-nav.html' %}
         </nav>
-    </div>
-    <div id="delivery-banner" class="row text-center bg-black">
+      </div>
+      <div id="delivery-banner" class="row text-center bg-black">
       <div class="col text-white">
           <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>                
       </div>            
-  </div>
+      </div>
+    </header>
 
     {% if messages %}
-       <div class="message-container"></div> 
+       <div class="message-container">
+        {% for message in messages %}
+          {% include 'includes/toasts/toast_success.html' %}
+        {% endfor %}
+       </div> 
     {% endif %}
 
     {% block page_header %}
@@ -125,7 +129,10 @@
     {% endblock %}
 
     {% block postloadjs %}
+      <script type="text/javascript">
+        $('.toast').toast('show');
+      </script>
     {% endblock %}
-    
+
   </body>
 </html>

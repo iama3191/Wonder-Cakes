@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
     <div class="container">
@@ -12,14 +13,14 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container mb-2">
-    <div class="row">
-        <div class="col">
-            <h2 class="logo-font mb-4 text-center pt-5">Shopping Bag</h2>
+    <div class="row pt-5">
+        <div class="col pt-5">
+            <h2 class="mb-4 text-center pt-5">Shopping Bag</h2>
             <hr>
         </div>
     </div>
 
-    <div class="row">
+    <div class="row mt-4 pt-4">
         <div class="col">
             {% if bag_items %}
                 <div class="table-responsive rounded">
@@ -84,7 +85,7 @@
                                     <a class="remove-item text-danger float-right text-decoration-none" id="remove_{{ item.item_id }}" data-product_flavor="{{ item.flavor }}"><small>Remove</small></a>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">€{{ item.product.price }}</p>
+                                    <p class="my-0">€{{ item.product.price| calc_subtotal:item.quantity }}</p>
                                 </td>
                             </tr>
                         {% endfor %}
