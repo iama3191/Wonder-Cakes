@@ -56,7 +56,7 @@
                                         <option value="chocolate">Chocolate</option>
                                         <option value="banana">Banana</option>
                                         <option value="pumpkin">Pumpkin</option>
-                                        <option value="red_velvet">Red velvet</option>
+                                        <option value="red velvet">Red velvet</option>
                                     </select>
                                 </div>
                             {% endif %}
@@ -65,7 +65,7 @@
                             {% if c %}
                                 <div class="col-12">
                                     <label for="product_customized_message">Message: </label>
-                                    <textarea class="form-control" id="product_customized_message" rows="3" placeholder="Happy Birthday, Peter!"></textarea>
+                                    <textarea class="form-control" id="product_customized_message" rows="3" placeholder="Happy Birthday, (name)"></textarea>
                                 </div>
                             {% endif %}
                             {% endwith %}
@@ -99,7 +99,7 @@
                             <div class="col-12">
                                 <a href="{% url 'products' %}" class="btn rounded-0 mt-5">
                                     <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
+                                        <i class="fa-solid fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
