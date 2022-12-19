@@ -75,10 +75,16 @@ html, body {
     cursor: pointer;
 }
 
-.custom-toast {
+.toast-custom {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     overflow: visible;
 }
 
+.toast-capper {
+    height: 2px;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

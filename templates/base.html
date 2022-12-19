@@ -37,7 +37,7 @@
     <title>Wonder Cakes {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid fixed-top"></header>
       <div class="row bg-white pt-lg-2 d-flex" id="top-nav">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left d-sm-none d-md-block d-none d-sm-block">
           <a href="{% url 'home' %}" class="nav-link main-logo-ling">
@@ -112,14 +112,22 @@
           <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>                
       </div>            
       </div>
-    </header>
+    
 
     {% if messages %}
-       <div class="message-container">
         {% for message in messages %}
-          {% include 'includes/toasts/toast_success.html' %}
+          {% with message.level as level %}
+            {% if level == 40 %}
+              {% include 'includes/toasts/toast_error.html' %}
+            {% elif level == 30 %}
+              {% include 'includes/toasts/toast_warning.html' %}
+            {% elif level == 25 %}
+              {% include 'includes/toasts/toast_success.html' %}
+            { % else %}
+                {% include 'includes/toasts/toast_info.html' %}
+            {% endif %}
+          {% endwith %}
         {% endfor %}
-       </div> 
     {% endif %}
 
     {% block page_header %}
@@ -129,10 +137,16 @@
     {% endblock %}
 
     {% block postloadjs %}
-      <script type="text/javascript">
-        $('.toast').toast('show');
-      </script>
     {% endblock %}
 
+    <script type="text/javascript">
+        // Code used from: https://stackoverflow.com/questions/63515279/how-to-initialize-toasts-with-javascript-in-bootstrap-5
+        var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+        var toastList = toastElList.map(function(toastEl) {
+        // Creates an array of toasts (it only initializes them)
+          return new bootstrap.Toast(toastEl) // No need for options; use the default options
+        });
+        toastList.forEach(toast => toast.show()); // This show them
+   </script>
   </body>
 </html>
