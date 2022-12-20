@@ -31,7 +31,6 @@ class OrderAdmin(admin.ModelAdmin):
         'street_address2',
         'date',
         'delivery_cost',
-        'delivery_date',
         'order_total',
         'grand_total',)
 
@@ -40,7 +39,6 @@ class OrderAdmin(admin.ModelAdmin):
         'full_name',
         'date',
         'delivery_cost',
-        'delivery_date',
         'order_total',
         'grand_total',)
 
