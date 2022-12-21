@@ -1,4 +1,3 @@
-
 /*
     Payment flow for this comes from:
     https://stripe.com/docs/payments/accept-a-payment
@@ -52,11 +51,50 @@ form.addEventListener('submit', function(ev) {
     ev.preventDefault();
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
+    $('#payment-form').fadeToggle(100);
+    $('#loading-overlay').fadeToggle(100);
+
+    var saveInfo = Boolean($('#id-save-info').attr('checked'));
+    var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
+    var postData = {
+        'csrfmiddlewaretoken': csrfToken,
+        'client_secret': clientSecret,
+        'save_info': saveInfo,
+    };
+    var url = '/checkout/cache_checkout_data/';
+
+    $.post(url, postData).done(function () {
+            
     stripe.confirmCardPayment(clientSecret, {
         payment_method: {
             card: card,
-        }
-    }).then(function(result) {
+            billing_details: {
+                name: $.trim(form.full_name.value),
+                phone: $.trim(form.phone_number.value),
+                email: $.trim(form.email.value),
+                address:{
+                    country: $.trim(form.country.value),
+                    county: $.trim(form.county.value),
+                    city: $.trim(form.city.value),
+                    line1: $.trim(form.street_address1.value),
+                    line2: $.trim(form.street_address2.value),
+                }
+            }
+        },
+        shipping: {
+                name: $.trim(form.full_name.value),
+                phone: $.trim(form.phone_number.value),
+                email: $.trim(form.email.value),
+                address:{
+                    country: $.trim(form.country.value),
+                    county: $.trim(form.county.value),
+                    city: $.trim(form.city.value),
+                    line1: $.trim(form.street_address1.value),
+                    line2: $.trim(form.street_address2.value),
+                    postal_code: $.trim(form.postcode.value),
+                }
+            },
+        }).then(function(result) {
         if (result.error) {
             var errorDiv = document.getElementById('card-errors');
             var html = `
@@ -73,4 +111,7 @@ form.addEventListener('submit', function(ev) {
             }
         }
     });
+    }).fail(function() {
+        location.reload();
+    })
 });
