@@ -74,7 +74,7 @@ form.addEventListener('submit', function(ev) {
                 email: $.trim(form.email.value),
                 address:{
                     country: $.trim(form.country.value),
-                    county: $.trim(form.county.value),
+                    state: $.trim(form.county.value),
                     city: $.trim(form.city.value),
                     line1: $.trim(form.street_address1.value),
                     line2: $.trim(form.street_address2.value),
@@ -84,10 +84,9 @@ form.addEventListener('submit', function(ev) {
         shipping: {
                 name: $.trim(form.full_name.value),
                 phone: $.trim(form.phone_number.value),
-                email: $.trim(form.email.value),
                 address:{
                     country: $.trim(form.country.value),
-                    county: $.trim(form.county.value),
+                    state: $.trim(form.county.value),
                     city: $.trim(form.city.value),
                     line1: $.trim(form.street_address1.value),
                     line2: $.trim(form.street_address2.value),
@@ -95,24 +94,24 @@ form.addEventListener('submit', function(ev) {
                 }
             },
         }).then(function(result) {
-        if (result.error) {
-            var errorDiv = document.getElementById('card-errors');
-            var html = `
-                <span class="icon" role="alert">
-                <i class="fas fa-times"></i>
-                </span>
-                <span>${result.error.message}</span>`;
-            $(errorDiv).html(html);
-            $('#payment-form').fadeToggle(100);
-            $('#loading-overlay').fadeToggle(100);
-            card.update({ 'disabled': false});
-            $('#submit-button').attr('disabled', false);
-        } else {
-            if (result.paymentIntent.status === 'succeeded') {
-                form.submit();
+            if (result.error) {
+                var errorDiv = document.getElementById('card-errors');
+                var html = `
+                    <span class="icon" role="alert">
+                    <i class="fas fa-times"></i>
+                    </span>
+                    <span>${result.error.message}</span>`;
+                $(errorDiv).html(html);
+                $('#payment-form').fadeToggle(100);
+                $('#loading-overlay').fadeToggle(100);
+                card.update({ 'disabled': false});
+                $('#submit-button').attr('disabled', false);
+            } else {
+                if (result.paymentIntent.status === 'succeeded') {
+                    form.submit();
+                }
             }
-        }
-    });
+        });
     }).fail(function() {
         location.reload();
     })

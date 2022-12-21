@@ -79,7 +79,7 @@ class StripeWH_Handler:
                     county=shipping_details.address.state,
                     city=shipping_details.address.city,
                     postcode=shipping_details.address.postal_code,
-                    street_address=shipping_details.address.line1,
+                    street_address1=shipping_details.address.line1,
                     street_address2=shipping_details.address.line2,
                     original_bag=bag,
                     stripe_pid=pid,
