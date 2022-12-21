@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 from .models import Order, OrderLineItem
 from products.models import Product
-
 import json
 import time
 
@@ -57,6 +56,8 @@ class StripeWH_Handler:
                     street_address1__iexact=shipping_details.address.line1,
                     street_address2__iexact=shipping_details.address.line2,
                     grand_total=grand_total,
+                    original_bag=bag,
+                    stripe_pid=pid,
                 )
                 order_exists = True
                 break
@@ -80,6 +81,8 @@ class StripeWH_Handler:
                     postcode=shipping_details.address.postal_code,
                     street_address=shipping_details.address.line1,
                     street_address2=shipping_details.address.line2,
+                    original_bag=bag,
+                    stripe_pid=pid,
                 )
                 for item_id, item_data in json.loads(bag).items():
                     product = Product.objects.get(id=item_id)
@@ -99,14 +102,15 @@ class StripeWH_Handler:
                                 product_flavor=flavor,
                             )
                             order_line_item.save()
-                except Exception as e:
-                    if order:
-                        order.delete()
-                    return HttpResponse(
-                        content=f'Webhook received: {event["type"]} | ERROR: {e}', status=500)
-            return HttpResponse(
-                content=f'Webhook received: {event["type"]}',
-                status=200)
+            except Exception as e:
+                if order:
+                    order.delete()
+                return HttpResponse(
+                    content=f'Webhook received: {event["type"]} | ERROR: {e}',
+                    status=500)
+        return HttpResponse(
+            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
+            status=200)
 
     def handle_payment_intent_payment_failed(self, event):
         """
