@@ -1,0 +1,26 @@
+Dear {{ order.full_name }},
+
+This is an order confirmation at Wonder Cakes. Your order information is below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: €{{ order.order_total }}
+Delivery: €{{ order.delivery_cost }}
+Grand Total: €{{ order.grand_total }}
+
+Your shipping address is below:
+
+Country: {{ order.country }}
+City: {{ order.city }}
+Address: {{ order.street_address1 }}
+
+Your contaact phone number on file is {{ order.phone_number }}.
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Thank you for your order!
+
+Sincerely,
+
+Wonder Cakes
