@@ -2,7 +2,7 @@
     <div class="d-flex flex-column position-relative">
         <div class="toast-body bg-white">
             {{ message }}
-            {% if grand_total %}
+            {% if grand_total and not on_profile_page %}
                 <p class="bg-white text-black py-1">Your Bag:({{ product_count }})</p>
                 <div class="bag-notification-wrapper">
                     {% for item in bag_items %}
