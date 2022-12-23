@@ -1,8 +1,8 @@
 
     <ul class="navbar-nav mr-auto d-sm-inline-block border-black">
         <!-- Search link -->
-        <li class="nav-item">
-            <a class="nav-link dropdown-toggle d-block d-sm-block d-md-none" href="#" id="mobile-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="list-inline-item dropdown">
+            <a class="nav-link  d-block d-sm-block d-md-none" href="#" id="mobile-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
                     <div><i class="fa-solid fa-magnifying-glass"></i></div>
                     <p class="my-0 text-danger">Search</p>
@@ -24,7 +24,7 @@
             </div>
         </li>
         <!-- My account link dropdown -->
-        <li class="nav-item dropdown">
+        <li class="list-inline-item dropdown">
             <a class="text-black nav-link d-block d-sm-block d-md-none" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
                     <div><i class="fa-solid fa-user"></i></div>
@@ -36,7 +36,7 @@
                     {% if request.user.is_superuser %}
                         <a href="{% url 'account_logout' %}" class="dropdown-item">Product Management</a>
                     {% endif %}
-                    <a href="#" class="dropdown-item">My Profile</a>
+                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                     <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                 {% else %}
                     <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -45,7 +45,7 @@
             </div>
         </li>
         <!-- Cart shopping link -->
-        <li class="nav-item">
+        <li class="list-inline-item dropdown">
             <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-sm-block d-md-none" href="{% url 'view_bag' %}">
                 <div class="text-center">
                     <div><i class="fa-solid fa-cart-shopping"></i></div>

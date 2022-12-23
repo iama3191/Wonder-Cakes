@@ -70,7 +70,6 @@
                     </div>
                 {% endfor %}
 
-
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Billing Info:</small>
@@ -103,8 +102,25 @@
                         <p class="mb-0">{{ order.grand_total }}</p>
                     </div>
                 </div>
-
             </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-7 text-right">
+                {% if from_profile %}
+                    <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
+                        <span class="icon mr-2">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </span>
+                        <span class="text-uppercase">Back to Profile</span>
+                    </a>
+                {% else %}
+                    <a href="{% url 'products' %}?category=baby_shower_cakes,wedding_cakes,birthday_cakes,cupcakes,special_ocassion_cakes,romantic_cakes,quick_cakes" class="btn btn-black rounded-0 my-2">
+                        <span class="icon mr-2">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </span>
+                        <span class="text-uppercase">All products</span>
+                {% endif %}
+			</div>
         </div>
     </div>
 </div>
