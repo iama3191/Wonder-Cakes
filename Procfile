@@ -1,0 +1,1 @@
+web: gunicorn wonder_cakes.wsgi:application
