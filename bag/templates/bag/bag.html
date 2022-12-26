@@ -46,8 +46,7 @@
                                 </td>
                                 <td class="py-3 small">
                                     <p class="my-0">{{ item.product.name }}</p>
-                                    <p class="my-0">Flavor: {% if item.product.has_other_flavors %}{{ item.flavor|upper }}{% else %}N/A{% endif %}</p>
-                                    <p class="my-0">Message: {% if item.product.customized_message %}{{ item.customized_message|upper }}{% else %}N/A{% endif %}</p>
+                                    <p class="my-0">Flavor: {% if item.product.main_flavor %}{{ item.product.main_flavor|upper }}{% else %}{{ item.flavor|upper }}{% endif %}</p>
                                     <p class="my-0">SKU: {{ item.product.sku|upper }}</p>
                                 </td>
                                 <td class="py-3">

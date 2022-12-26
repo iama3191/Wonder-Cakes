@@ -16,7 +16,7 @@
                             </div>
                             <div class="col-9">
                                 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                <p class="my-0 small">Flavor: {% if item.product.has_other_flavors %}{{ item.flavor|upper }}{% else %}N/A{% endif %}</p>
+                                <p class="my-0 small">Flavor: {% if item.product.main_flavor %}{{ item.product.main_flavor|upper }}{% else %}{{ item.flavor|upper }}{% endif %}</p>
                                 <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                             </div>
                         </div>
