@@ -1,108 +1,387 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome iama3191,
+# My mommy and me blog
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[View the live project here](https://my-mommy-and-me.herokuapp.com/ "Link to deployed link - My mommy and me blog")
 
-## Gitpod Reminders
+## Table of contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+1. [Introduction](#Introduction)
 
-`python3 -m http.server`
+2. [UX](#UX)
 
-A blue button should appear to click: _Make Public_,
+	A. [Ideal User Demographic](#Ideal-User-Demographic)
 
-Another blue button should appear to click: _Open Browser_.
+	B. [User Stories](#User-Stories)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+	C. [Development Plans](#Development-Plans)
 
-A blue button should appear to click: _Make Public_,
+	D. [Design](#Design)
 
-Another blue button should appear to click: _Open Browser_.
+3. [Features](#Features)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+	A. [Existing Features](#Existing-Features)
 
-To log into the Heroku toolbelt CLI:
+	B. [Features to Implement in the future](#Features-to-Implement-in-the-future)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+4. [Issues and Bugs](#Issues-and-bugs)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+5. [Technologies Used](#Technologies-used)
 
-------
+	A. [Main Languages Used](#Main-Languages-Used)
 
-## Release History
+	B. [Additional Languages Used](#Additional-Languages-Used)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+	C. [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+6. [Testing](#Testing)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+	A. [Testing.md](TESTING.md)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+7. [Deployment](#Deployment)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+8. [Credits](#Credits)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+	A. [Content](#Content)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+	B. [Media](#Media)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+	C. [Code](#Code)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+9. [Acknowledgments](#Aknowledgements)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Introduction
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## UX
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Ideal User Demographic
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+The ideal user of this website is:
+• Parents
+• Cooking Enthusiasts
 
-------
+### User Stories 
 
-## FAQ about the uptime script
+#### Users
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+#### Site Admin
+1. As a site admin I can create draft posts so that I can finish writing the content later.
 
-**How will this affect me?**
+### Development Plans
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+To create an appeling website with a great UX and UI, the developer make a research throughout the best cooking blogs, with the best and worst features.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+#### Strategy
+- **Roles**
+    - User
+    - Admin
 
-**So….?**
+- **Demographic**
+    - Parents
+    - Cooking Enthusiasts
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- **Psycographics**
+    - Personality & Attitude:
+        - Patient
+        - Creative
+        - Curious
+    - Values:
+        - Love for quality time in family
+    - Lifestyle:
+        - Parents
+        - Interested in homemade food
 
-**Can I opt out?**
+The website needs to enable the *user* to:
+- search for recipes.
+- make comments to a recipe.
+- like and unlike recipes.
+- upload images from their experiences when adding a recipe.
+- register and log in to participate in the blog.
+- save recipes to a favorite page.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+The website needs to enable the *admin* to:
+- Create drafts for finishing later.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+#### Scope
+the scope was defined to be able to determine the work that needed to be done in terms of the features and of the strategies described.
 
-**Anything more?**
+- *Content Requirements*
+The user will be expecting:
+    - A comprehensive list of recipes.
+    - A detailed list with ingredients and procedure.
+    - A list of comments.
+    - A page to find the saved recipes.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- *Functionality Requirements*
+The user will be able to:
+    - Navigate the site easily.
+    - Select recipes for trying.
+    - Add comments to every recipe.
+    - Like or unlike recipes.
 
----
+### Design
 
-Happy coding!
+#### Color Scheme
+
+#### Typography
+
+#### Imagery
+
+### Design
+
+#### Data model
+
+The project is hosted on Heroku and the database used is Heroku PostreSQL. Cloudinary is used to store all the images. Two custom models were created for the project: Recipe and Comment. This models were modified from the Walkthrough project from Code Institute 'I Think Therefor I blog'.
+
+
+## Features
+
+### Existing Features
+
+- **Navigation Bar**
+
+### Features to Implement in the future
+
+- **Favorite Page**
+    - Feature: Every user will have on his profile a section with all their favorite recipe (after liking it) for easy access at any time.  
+    - Reason for not featuring in this release: The developer run out of enough time for implementation.
+
+- **Third-Party Authentication**
+    - Feature: The user will have the ability to register with an existent account on a social media, like Facebook or Google.
+    - Reason for not featuring in this release: The developer run out of enough time for implementation.
+
+## Issues and Bugs
+
+**Bug:** 
+
+## Technologies Used
+
+### Main Languages Used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wiki")
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wiki")
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript "Link to JavaScript Wiki")
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Link to Python Wiki")
+
+### Frameworks, Libraries & Programs Used
+- [Django](https://www.djangoproject.com/ "Link to Django Project website"): Python Framework used in the development of the project.
+
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/index.html "Link to django-allauth documentation"): Used for authentication and account registration.
+
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/ "Link to django crispy documentation"): Used to simplify the rendering of Django forms.
+
+- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/ "Link to Bootstrap page"): Bootstrap CSS Framework used for styling and to build responsive web pages.
+
+- [Heroku](https://dashboard.heroku.com/ "Link to the Heroku Home Page"): For deployment and hosting of the application.
+
+- [Google Fonts](https://fonts.google.com/ "Link to Google Fonts"): To import the needed fonts for the project: 'Architects Daughter' and 'Open Sans'.
+
+- [Font Awesome](https://fontawesome.com/ "Link to FontAwesome"): Used to add icons and make the blog more interactive.
+
+- [Git](https://git-scm.com/ "Link to Git homepage"): Used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+- [GitHub](https://github.com/ "Link to GitHub"): Used to store the projects code after being pushed from Git and to create the Kanban board used for this project.
+
+- [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage"): Checking the responsive.
+
+- [Google Translate](https://translate.google.com/ "Link to Google Translate"): Checking the grammar when needed after translating from Spanish to English.
+
+- [Coolors](https://coolors.co/ "Link to Coolors"): Program used to check compability of color of the blog.
+
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/ "Link to developer tools page"): Used to test the response on different screen sizes, debugging and to generate a Lighthouse report to analyze page load.
+
+- [HTML Validator](https://validator.w3.org/): Used to check the code for HTML validation.
+
+- [W3 CSS Validator](https://jigsaw.w3.org/css-validator/): Used to check the code for CSS validation.
+
+- [Unsplah](www.unsplash.com "Link to the home page"): Used image for the blog.
+
+- [Pexels](www.pexels.com "Link to the home page"): Used image for the blog.
+
+## Testing
+
+### Browser Testing
+
+I have tested that this application works using Mackboor Air(Retina, 13-inch, 2020), with macOS Monterey 12.6 installed, using the following browsers.
+
+* Safari Version 16.0 (17614.1.25.9.10, 17614) 
+* Google Version 105.0.5195.125 (Official Build) (arm64)
+
+
+### Responsivness
+
+
+### Validator Testing
+
+#### W3C Markup Validator:
+
+
+#### W3C CSS Validator:
+
+The W3C CSS Validator Services were used to validate the CSS to ensure there were no errors in there.
+
+
+### PEP8 Online:
+
+
+### Lighthouse
+
+The Lighthouse performance tests were mande on an incognito tab for Google's recommnedation.
+
+The tests' criterias were:
+
+* Performance
+* Accessibility
+* Best Practice
+* SEO
+
+* Desktop test 
+
+All criterias were passed with more than 90%.
+
+![Lighthouse performance on desktop view](media/desktop-performance-lighthouse.png)
+
+* Mobile test
+
+I did two tests for this option, the first one had a performance score of 76%, where after reading the message I couldn't find a solution, so I tested on a Samnsung Galaxy A32, and it worked perfectly without any problem, then I repeat the test and all the criterias were passed with more than 90%.
+
+* First Test
+
+![Lighthouse performance on mobile view: 1st attempt](media/1-st-mobile-lighthouse-performance.png)
+
+* Second Test
+
+![Lighthouse performance on mobile view: 2nd attempt](media/2-nd-mobile-lighthouse-performance.png)
+
+
+Coverage test result: After writing 10 tests, the coverage only got to 70% and didn't keep updating even though, every test is passed.
+
+## Deployment
+
+- This project was developed using a [GitPod](https://gitpod.io/ "Link ot GitPod") workspace. 
+- The code was commited to [Git](https://git-scm.com/ "Link to Git").
+- The code was pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal.
+
+The regular process for deployment can be found on the CI Cheat Sheet from the Full Stack Framework.
+
+1. How to clone the repository
+2. Create Application and Postgres DB on Heroku
+3. Configure Cloudinary to host images used by the application
+4. Connect the Heroku app to the GitHub repository
+5. Final Deployment steps
+
+### How to clone the repository
+
+When you clone a repository, you copy the repository from GitHub.com to your local machine.
+
+1. Go to the https://github.com/iama3191/PP4-CI repository on GitHUb.
+
+2. Click the 'Code' button to the right-hand side, then click HTTPs and copy the link there.
+
+3. Open a GitBash terminal and navigate to the directory where you want to locate the clone.
+
+4. On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process.
+
+5. To install the packages required by the application use the command : pip install -r requirements.txt.
+
+6. When developing and running the application locally set DEBUG=True in the settings.py file.
+
+7. Changes made to the local clone can be pushed back to the repository using the following commands:
+
+* git add filenames (or "." to add all changed files)
+* git commit -m "text message describing changes"
+* git push
+
+Any changes pushed to the master branch will take effect on the live project once the application is re-deployed from Heroku.
+
+### Create Application and Postgres DB on Heroku
+
+1. Log in to Heroku at www.heroku.com  (create an account if needed).
+
+2. From the Heroku dashboard, click the Create New App button.
+
+3. On the Create New App page, enter a unique name for the application and select region. Then click Create app.
+
+4. On the Application Configuration page for the new app, click on the Resources tab.
+
+5. In the Add-ons search bar enter "Postgres" and select "Heroku Postgres" from the list (click the "Submit Order Form" button on the pop-up dialog.)
+
+6. Next, click on Settings on the Application Configuration page and click on the "Reveal Config Vars" button - check the DATABASE_URL has been automatically set up.
+
+7. Add a new Config Var called DISABLE_COLLECTSTATIC and assign it a value of 1.
+
+8. Add a new Config Var called SECRET_KEY and assign it a value (any random string of letters, digits and symbols.)
+
+9. The settings.py file should be updated to use the DATABASE_URL and SECRET_KEY environment variable values as follows :
+
+    * DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
+
+    * SECRET_KEY = os.environ.get('SECRET_KEY')
+
+10. In Gitpod, in the project terminal window, to initialize the data model in the postgres database, run the command : python3 manage.py migrate
+
+11. Make sure the project requirements.txt file is up to date with all necessary supporting files by entering the command : pip3 freeze --local > requirements.txt
+
+12. Commit and push any local changes to GitHub.
+
+In order to be able to run the application on localhost, add SECRECT_KEY and DATABASE_URL and their values to env.py
+
+### Configure AWS
+
+
+### Connect the Heroku app to the GitHub repository
+
+1. Go to the Application Configuration page for the application on Heroku and click on the Deploy tab.
+
+2. Select GitHub as the Deployment Method and if prompted, confirm that you want to connect to GitHub. Enter the name of the github repository (the one used for this project is (https://github.com/iama3191/PP4-CI) and click on Connect to link up the Heroku app to the GitHub repository code.
+
+3. Scroll down the page and choose to either Automatically Deploy each time changes are pushed to GitHub, or Manually deploy - for this project Manual Deploy was selected.
+
+4. The application can be run from the Application Configuration page by clicking on the Open App button.
+
+
+The live link for this project is (https://wondercakes.herokuapp.com/)
+
+
+### Final Deployment steps
+
+Once code changes have been completed and tested on localhost, the application can be prepared for Heroku deployment as follows:
+
+1. Set DEBUG flag to False in settings.py.
+
+2. Ensure this line exists in settings.py to make summernote work on the deployed environment (CORS security feature): X_FRAME_OPTIONS = 'SAMEORIGIN'.
+
+3. Ensure requirements.txt is up to date using the command : pip3 freeze --local > requirements.txt.
+
+4. Push files to GitHub
+
+5. In the Heroku Config Vars for the application delete this environment variable : DISABLE_COLLECTSTATIC.
+
+6. On the Heroku dashboard go to the Deploy tab for the application and click on deploy branch.
+
+
+## Credits
+
+* Code Institute Tutor Support: for helping me when I couldn't do it by myself.
+
+* Code Institute: Walkthrough modules in Full Stack Frameworks.
+
+* Code Institute Slack Community: For troubleshooting and FAQ.
+
+* Django documentation: For clarifying all the doubts
+
+* Stack Overflow: For troubleshooting and FAQ.
+
+
+### Code
+
+
+
+## Acknowledgements
+
+* My mentor at Code Institute, Brian Macharia, for code review, help and feedback.
+
+
