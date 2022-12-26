@@ -18,9 +18,4 @@ class Migration(migrations.Migration):
             model_name='product',
             name='rating',
         ),
-        migrations.AddField(
-            model_name='product',
-            name='main_flavor',
-            field=models.CharField(blank=True, max_length=40, null=True),
-        ),
     ]
