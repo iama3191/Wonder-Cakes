@@ -375,6 +375,8 @@ Once code changes have been completed and tested on localhost, the application c
 
 * Stack Overflow: For troubleshooting and FAQ.
 
+* [!Dumpdata command from Django](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata)
+
 
 ### Code
 
