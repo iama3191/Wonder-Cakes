@@ -120,6 +120,16 @@ html, body {
     top: 10px;
     right: 5px;
 }
+
+/* Milchimp */
+
+#mc_embed_signup {
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif; 
+    width:600px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
