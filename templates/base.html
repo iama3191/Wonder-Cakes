@@ -60,7 +60,7 @@
           <!-- Code from Project-Boutique Ado https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+EA101+2021_T1/courseware/eb05f06e62c64ac89823cc956fcd8191/196e74d3dd5849cd801d319d7095c3eb/?child=first-->
           <form action="{% url 'products' %}" method="get">
             <div class="input-group w-100">
-              <input type="text" class="border-black rounded-0 border form-control" name="q" placeholder="Search cakes">
+              <input type="text" class="border-black rounded-0 border form-control" name="q" placeholder="Search our cakes">
               <div class="input-group-append">
                 <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                   <span class="icon">
@@ -122,7 +122,7 @@
             <i class="fa-regular fa-cake-candles"></i>
           </a>
         </div> -->
-        <nav class="navbar navbar-expand-lg navbar-light pt-0 mx-auto">
+        <nav class="navbar navbar-expand-lg navbar-light py-2 px-2 mx-auto">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-pressed="true" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -172,7 +172,6 @@
       toastList.forEach(toast => toast.show()); // This show them
     </script>
     {% endblock %}
-
 
 <!-- Footer  from https://mdbootstrap.com/docs/standard/navigation/footer/
 and modified for the project -->
@@ -231,7 +230,6 @@ and modified for the project -->
    <a href="https://github.com/iama3191" target="_blank" role="button"><i class="fa-brands fa-github footer-icon"> </i></a> 
   </div>
 </footer>
-
 <!-- Mail chimp JavaScript-->
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
