@@ -81,7 +81,7 @@ input[type=email] {
     height: calc(100vh - 150px);
     width:100%;
     /* display: flex; */
-    background: url('/media/hero-image-background.jpg') no-repeat center center fixed;
+    background: url('/media/hero-image-background.jpg') no-repeat center center;
     background-color: rgb(174 230 242);
     background-size: cover;
     justify-content: center;
@@ -101,7 +101,7 @@ input[type=email] {
 .hero-text {
     position: absolute;
     text-align: right;
-    bottom: 20%;
+    bottom: 35%;
     right: 10%;
 }
 
@@ -131,6 +131,17 @@ input[type=email] {
     align-items: center;
 }
 
+/************************** About us page */
+
+.about-container {
+    padding-top: 20px
+}
+
+.separation-line {
+    border-top-width: 5px;
+    color:rgba(145, 243, 236);
+}
+
 .about-img {
     width: 100%;
     max-width: 400px !important;
@@ -138,6 +149,15 @@ input[type=email] {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.contact-link {
+    background-color: rgba(63, 182, 182, 0.737);
+}
+
+.contact-link:hover {
+    color: rgba(63, 182, 182, 0.737) !important;
+    background-color: white;
 }
 
 .btt-button {
