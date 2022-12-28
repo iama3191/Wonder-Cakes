@@ -1,5 +1,4 @@
 /****************************** General style */
-
 html, body {
     height: 100%;
     margin: 0;
@@ -20,42 +19,68 @@ html, body {
     width: 1.5rem;
 }
 
-.nav-icon:hover {
+.nav-icon:hover,
+.footer-icon:hover {
     color: rgba(63, 182, 182, 0.737);
 }
 
-.form-control:focus {
+.form-control:focus,
+input[type=email]:focus {
     border-color: rgba(63, 182, 182, 0.737) !important;
     box-shadow: 0 0 0 0.25rem rgba(63, 182, 182, 0.546);
 }
 
+/********************* Footer */
 
+input[type=email] {
+    border: 1px solid #ced4da;
+}
+
+.promotion {
+    background-color: black !important;
+}
+
+.footer-icon {
+    font-size: 20px;
+    color: white;
+}
+
+.social-icon {
+    font-size: 30px;
+}
+
+.odd-icon-1 {
+    color: rgb(28, 144, 252);
+}
+
+.odd-icon-2 {
+    color: rgb(241 30 31);
+}
+
+.even-icon-1 {
+    color: #00c302;
+}
+
+.even-icon-2 {
+    color: orange;
+}
+
+.btn-suscribe {
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 1.5px;
+}
+
+/*************************** Hero image */
 .hero-image {
-    background: url('/media/hero-image-background.jpg') no-repeat center center;
+    height: calc(100vh - 150px);
+    width:100%;
+    /* display: flex; */
+    background: url('/media/hero-image-background.jpg') no-repeat center center fixed;
     background-color: rgb(174 230 242);
     background-size: cover;
-    width:100%;
-    height: 65vh;
+    justify-content: center;
     position: relative;
-}
-
-.hero-text {
-    position: absolute;
-    text-align: right;
-    top: 35%;
-    right: 20%;
-}
-
-
-.shop-now-button,
-.btn-black {
-    background-color: black;
-    color: aliceblue;
-}
-
-.shop-now-button:hover {
-    border: 2px solid black;
-    background: aliceblue;
 }
 
 .overlay {
@@ -65,9 +90,30 @@ html, body {
     left: 0;
     position: fixed;
     background: white;
-    z-index: -1;
-    
+    z-index: -1;  
 }
+
+.hero-text {
+    position: absolute;
+    text-align: right;
+    bottom: 20%;
+    right: 10%;
+}
+
+.shop-now-button,
+.btn-black,
+.btn-suscribe {
+    background-color: black;
+    color: aliceblue;
+}
+
+.shop-now-button:hover,
+.btn-suscribe:hover {
+    border: 2px solid black !important;
+    background: aliceblue;
+    color: black;
+}
+
 
 .product-img {
     width: 100%;

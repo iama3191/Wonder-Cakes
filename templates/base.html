@@ -138,7 +138,6 @@
         </div>            
       </div>
   </header>
-    
 
     {% if messages %}
         {% for message in messages %}
@@ -173,5 +172,68 @@
       toastList.forEach(toast => toast.show()); // This show them
     </script>
     {% endblock %}
+
+
+<!-- Footer  from https://mdbootstrap.com/docs/standard/navigation/footer/
+and modified for the project -->
+<footer class="text-center bg-light">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <a href="https://www.facebook.com/WonderCakes22" target="_blank" class="btn text-white btn-floating m-1" role="button" ><i class="fa-brands fa-facebook odd-icon-1 social-icon"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" class="btn text-white btn-floating m-1" role="button"><i class="fa-brands fa-instagram even-icon-1 social-icon"></i></a>
+      <a href="https://www.pinterest.com/" target="_blank" class="btn text-white btn-floating m-1" role="button"><i class="fa-brands fa-pinterest odd-icon-2 social-icon"></i></a>
+      <a href="https://twitter.com/" target="_blank" class="btn text-white btn-floating m-1" role="button"><i class="fa-brands fa-twitter even-icon-2 social-icon"></i></a>
+    </section>
+  </div>
+  <hr>
+
+  <!-- Section: Mailchimp Signup Form -->
+  <div id="mc_embed_signup bg-dark">
+    <form action="https://gmail.us21.list-manage.com/subscribe/post?u=4681803862a52a6100db911bf&amp;id=4d095adcc2&amp;f_id=0069c9e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div class="row d-flex justify-content-center">
+        <div class="col-auto">
+          <p class="pt-2">
+            <strong>Sign up for our newsletter</strong>
+          </p>
+        </div>
+        <div id="mc_embed_signup_scroll" class="col-md-5 col-12">
+          <div class="mc-field-group">
+            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+            </label>
+            <input type="email" value="" placeholder="email@example.com" name="EMAIL" class="required email" id="mce-EMAIL" required>
+            <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+          </div>
+          <div id="mce-responses" class="clear foot">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div class="col-auto">
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_4681803862a52a6100db911bf_4d095adcc2" tabindex="-1" value="">
+            </div>
+            <div class="optionalParent">
+              <div class="clear foot">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn-suscribe border-0">
+              </div>
+            </div>
+          </div>                     
+        </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Self promotion-->
+  <div class="text-center promotion text-white p-3 align-middle">
+   For more about the developer 
+   <a href="https://github.com/iama3191" target="_blank" role="button"><i class="fa-brands fa-github footer-icon"> </i></a> 
+  </div>
+</footer>
+
+<!-- Mail chimp JavaScript-->
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
   </body>
 </html>
