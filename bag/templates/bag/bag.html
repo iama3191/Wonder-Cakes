@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <div class="row mt-4 pt-4">
+    <div class="row mt-4 py-4">
         <div class="col">
             {% if bag_items %}
                 <div class="table-responsive rounded">
@@ -88,8 +88,8 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <a class="edit-link text-info text-decoration-none"><small>Update</small></a>
-                                    <a class="text-danger float-right text-decoration-none delete-link" id="remove_{{ item.item_id }}" data-product_flavor="{{ item.flavor }}"><small>Remove</small></a>
+                                    <a class="edit-link update-link text-info text-decoration-none border-0"><small>Update</small></a>
+                                    <a class="text-danger remove-item float-right text-decoration-none delete-link" id="remove_{{ item.item_id }}" data-product_flavor="{{ item.flavor }}"><small>Remove</small></a>
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0">€{{ item.product.price| calc_subtotal:item.quantity }}</p>
@@ -127,8 +127,8 @@
                     </table>
                 </div>
             {% else %}
-                <p class="lead mb-5">Your bag is empty.</p>
-                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                <p class="lead text-center">Your bag is empty.</p>
+                <a href="{% url 'products' %}" class="btn rounded-0 btn-lg keep-shopping-link bag-shopping-link mx-auto d-flex justify-content-center align-middle">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
                     </span>
