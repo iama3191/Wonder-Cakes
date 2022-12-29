@@ -209,6 +209,31 @@ input[type=email] {
     cursor: pointer;
 }
 
+.product-link:hover {
+    color: rgb(63, 182, 182) !important;
+}
+
+.border-info {
+    border-color:rgb(205, 204, 204)!important;
+    padding: 3px;
+}
+
+/******************** Product detail page */
+
+.keep-shopping-link,
+.add-to-bag:hover,
+.increment-qty:hover {
+    border: 1px solid black !important;
+}
+
+.keep-shopping-link:hover,
+.decrement-qty:hover {
+    background-color: rgba(63, 182, 182, 0.737);
+    color: white;
+    border: none;
+}
+
+/****************** Toast messages */
 .toast-custom {
     position: absolute;
     top: 20px;
@@ -232,7 +257,6 @@ input[type=email] {
     border-left: 4px solid rgb(81, 198, 240);
 
 }
-
 
 .bag-notification-wrapper {
     height: 100px;
