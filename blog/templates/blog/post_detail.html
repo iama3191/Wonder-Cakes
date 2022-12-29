@@ -24,9 +24,10 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
-                <h3 class="text-center mt-3">
+                <h3 class="logo-font text-center mt-3">
                     {{ post.title }}
                 </h3>
+                <hr class="w-75 mx-auto separation-line">
                 <p class="lead text-center text-capitalize">Author: {{ post.author }} </p>
                 <p class="lead text-center">{{ post.date }}</p>
                 {% if user.is_superuser %}
