@@ -5,8 +5,12 @@ html{
 
 body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: 'Lato', sans-serif;
 }
+
 /****************************** Navbar */
 .logo-font {
     font-family: 'Norican', cursive;
@@ -39,6 +43,10 @@ input[type=email]:focus,
 }
 
 /********************* Footer */
+footer {
+    margin-top: auto;
+}
+
 input[type=email] {
     border: 1px solid #ced4da;
 }
@@ -222,6 +230,14 @@ input[type=email] {
     padding: 3px;
 }
 
+.category-badge {
+    letter-spacing: 2px;
+}
+
+.card:hover {
+    border: 2px solid rgb(63, 182, 182);
+}
+
 /******************** Product detail page */
 
 .keep-shopping-link,
@@ -238,8 +254,9 @@ input[type=email] {
 .keep-shopping-link:hover,
 .decrement-qty:hover,
 .cancel-link:hover,
-.add-product-btn:hover {
-    background-color: rgba(63, 182, 182, 0.737);
+.add-product-btn:hover,
+.allauth-button:hover {
+    background-color: rgba(63, 182, 182, 0.737) !important;
     color: white;
     border: none;
 }
@@ -305,6 +322,16 @@ input[type=email] {
     position: absolute;
     top: 10px;
     right: 5px;
+}
+
+/****************** Allauth account */
+
+.account-link {
+    color: rgba(23, 162, 184, .85) !important;
+}
+
+.account-link:hover {
+    color: black !important;
 }
 
 /* Milchimp */

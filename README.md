@@ -215,6 +215,8 @@ Once code changes have been completed and tested on localhost, the application c
 
 * [!How to fix the navbar](https://stackoverflow.com/questions/68381021/how-to-separate-nav-bar-from-the-rest-of-the-page)
 
+* [!How to make footer to stick to the bottom of page](https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14#:~:text=To%20do%20this%20just%20remove,make%20content%20align%20to%20center.)
+
 ### 1. Technologies Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wiki")
