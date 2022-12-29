@@ -128,7 +128,7 @@ input[type=email] {
 
 .separation-line {
     border-top-width: 5px;
-    color:rgba(145, 243, 236);
+    color:rgb(121, 232, 225);
 }
 
 .about-img {
@@ -153,7 +153,8 @@ input[type=email] {
 
 /***************** FAQ page  */
 
-.faq {
+.faq,
+.profile {
     letter-spacing: 3px;
 }
 
@@ -223,9 +224,11 @@ input[type=email] {
 
 .keep-shopping-link,
 .add-to-bag:hover,
+.secure-checkout-link:hover,
 .increment-qty:hover,
 .cancel-link,
-.update-link:hover
+.increment-qty,
+.update-link:hover,
 .add-product-btn {
     border: 1px solid black !important;
 }
