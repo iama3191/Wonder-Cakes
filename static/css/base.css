@@ -212,7 +212,8 @@ input[type=email] {
     cursor: pointer;
 }
 
-.product-link:hover {
+.product-link:hover,
+.category-link:hover {
     color: rgb(63, 182, 182) !important;
 }
 

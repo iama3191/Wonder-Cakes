@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import handler404
+# from .views import handler404
+import wonder_cakes.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,7 +30,7 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler403 = 'wonder_cakes.views.handler403'
-handler404 = 'wonder_cakes.views.handler404'
-handler405 = 'wonder_cakes.views.handler405'
-handler500 = 'wonder_cakes.views.handler500'
+handler403 = wonder_cakes.views.handler403
+handler404 = wonder_cakes.views.handler404
+handler405 = wonder_cakes.views.handler405
+handler500 = wonder_cakes.views.handler500
