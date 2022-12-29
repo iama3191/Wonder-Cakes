@@ -24,7 +24,7 @@
                         <span class="p-2 mt-2 badge bg-dark rounded-0 border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
-                <hr class="w-50 mx-auto">
+                <hr class="w-75 mx-auto separation-line">
             </div>
         </div>
         <div class="row">
@@ -52,39 +52,38 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
+                <!-- Card for product -->
+                <div class="row product-container">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
-                                <div class="product-img">
+                            <div class="card h-100 border-black">
                                 {% if product.image %}
                                     <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                        <img class="card-img-top img-fluid product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                                     </a>
                                 {% else %}
                                     <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                        <img class="card-img-top img-fluid product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                     </a>
                                 {% endif %}
-                                </div> 
-                                <div class="card-body pb-0">
+                                <div class="card-body pb-0 text-center text-black">
                                     <p class="mb-0">{{ product.name }}</p>
                                 </div>
-                                <div class="card-footer bg-white border-0 text-left">
+                                <div class="card-footer bg-white border-0 text-center">
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
-                                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                <a class="text-muted text-decoration-none" href="{% url 'products' %}?category={{ product.category.name }}">
                                                     <i class="fa-solid fa-tag"></i> {{ product.category.friendly_name }}
                                                 </a>
                                             </p>
                                             {% endif %}
                                             {% if request.user.is_superuser %}
                                                 <small>
-                                                    <a href="{% url 'edit_product' product.id %}">Edit</a>
-                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                                    <a href="{% url 'edit_product' product.id %}" class="edit-link"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a class="text-danger px-3 delete-link" href="{% url 'delete_product' product.id %}"><i class="fa-solid fa-trash"></i></a>
                                                 </small>
                                             {% endif %}
                                         </div>
@@ -93,23 +92,23 @@
                             </div>
                         </div>
                         {% if forloop.counter|divisibleby:1 %}
-                            <div class="col-12 d-sm-none mb-5">
-                                <hr>
+                            <div class="col-12 d-sm-none">
+                                <hr class="my-5">
                             </div>
                         {% endif %}                        
                         {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                                <hr>
+                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none">
+                                <hr class="my-5">
                             </div>
                         {% endif %}
                         {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                                <hr>
+                            <div class="col-12 d-none d-lg-block d-xl-none">
+                                <hr class="my-5">
                             </div>
                         {% endif %}
                         {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block mb-5">
-                                <hr>
+                            <div class="col-12 d-none d-xl-block">
+                                <hr class="my-5">
                             </div>
                         {% endif %}
                     {% endfor %}
@@ -118,8 +117,8 @@
         </div>
     </div>
     <!--Need to change the style-->
-    <div class="btt-button shadow-sm rounded-0 border border-black">
-        <a class="btt-link d-flex h-100">
+    <div class="btt-button  border-0">
+        <a class="d-flex h-100 top-link">
             <i class="fa-solid fa-arrow-up mx-auto my-auto"></i>
         </a>	
     </div>
