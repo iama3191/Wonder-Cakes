@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}
+   <title>Wonder Cakes | Blog</title>
+{% endblock %}
+
+{% block page_header %}
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center my-3">
+                <h2 class="logo-font">Wonder Cakes Blog</h2>
+                <hr class="w-75 mx-auto separation-line">
+                {% if user.is_superuser %}
+                    <a class="category-badge text-decoration-none text-uppercase" href="{% url 'add_post' %}">
+                        <span class="p-2 mt-2 mr-2 badge badge-light rounded-lg">Add post</span>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            {% for post in posts %}
+                <div class="col-12 col-md-6">
+                    <h3 class="text-center mt-3">{{ post.title }}</h3>
+                    {% if post.image %}
+                    <a href="{% url 'post_detail' post.slug %}" class="post-image">
+                        <img class="card-img-top img-fluid post-img rounded-lg" src="{{ post.image.url }}" alt="{{ post.name }}">
+                    </a>
+                    {% else %}
+                    <a href="{% url 'post_detail' post.slug %}" class="post-image">
+                        <img class="card-img-top img-fluid post-img rounded-lg" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.name }}">
+                    </a>
+                    {% endif %}
+                    <p class="lead mt-2 mb-0 text-center">{{ post.snippet }}</p>
+                    <p class="lead text-center">
+                        <a href="{% url 'post_detail' post.slug %}" class="text-center">Read more</a>
+                    </p>
+                    {% if user.is_superuser %}
+                    <div class="d-flex edit-delete-container">
+                        <a href="{% url 'edit_post' post.slug %}" class="edit-link"><i class="fa-solid fa-pen-to-square"></i></a> | 
+                        <a class="text-danger px-3 delete-link" href="{% url 'delete_post' post.slug %}"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                    <br>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

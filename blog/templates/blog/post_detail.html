@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}
+   <title>Wonder Cakes | {{ post.name }} </title>
+{% endblock %}
+
+{% block page_header %}
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center my-3">
+                <h2 class="logo-font">Wonder Cakes Blog</h2>
+                <hr class="w-75 mx-auto separation-line">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <h3 class="text-center mt-3">
+                    {{ post.title }}
+                </h3>
+                <p class="lead text-center text-capitalize">Author: {{ post.author }} </p>
+                <p class="lead text-center">{{ post.date }}</p>
+                {% if user.is_superuser %}
+                <div class="d-flex">
+                    <a href="{% url 'edit_post' post.slug %}" class="edit-link"><i class="fa-solid fa-pen-to-square"></i></a> | 
+                    <a class="px-3 delete-link" href="{% url 'delete_post' post.slug %}"><i class="fa-solid fa-trash"></i></a>
+                </div>
+                {% endif %}
+                {% if post.image %}
+                <div class="bouquet-img-center">
+                    <img class="card-img-top img-fluid post-detail-img rounded-lg" src="{{ post.image.url }}" alt="{{ post.name }}">
+                </div>
+                {% else %}
+                <div class="bouquet-img-center">
+                    <img class="card-img-top img-fluid post-detail-img rounded-lg" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.name }}">
+                </div>
+                {% endif %}
+                <p class="lead mt-2 text-justify">{{ post.body }}</p>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
