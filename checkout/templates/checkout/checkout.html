@@ -22,9 +22,9 @@
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
-        <div class="col">
-            <h2 class="mb-4 text-center">Checkout</h2>
-            <hr>
+        <div class="col my-4 text-center">
+            <h2 class="logo-font">Checkout</h2>
+            <hr class="w-75 mx-auto separation-line">
         </div>
     </div>
     <div class="row">
@@ -113,20 +113,20 @@
                     <input type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
 
-                <div class="submit-button text-right mt-5 mb-2">                    
-                    <a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
+                <div class="submit-button text-end mt-5 mb-2">                    
+                    <a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0 edit-bag-link">
                         <span class="icon">
                             <i class="fa-solid fa-chevron-left"></i>
                         </span>
                         <span class="font-weight-bold">Adjust Bag</span>
                     </a>
-                    <button id="submit-button" class="btn btn-black rounded-0">
+                    <button id="submit-button" class="btn btn-black rounded-0 complete-order-link">
                         <span class="font-weight-bold">Complete Order</span>
                         <span class="icon">
                             <i class="fa-solid fa-lock"></i>
                         </span>
                     </button>
-                    <p class="small text-danger my-0">
+                    <p class="small text-danger my-0 text-end">
                         <span class="icon">
                             <i class="fa-solid fa-circle-exclamation"></i>
                         </span>

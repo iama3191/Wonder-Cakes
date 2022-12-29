@@ -1,12 +1,11 @@
+/*************** Stripe */
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
   height: 40px;
   padding: 10px 12px;
-  border: 1px solid transparent;
   border-radius: 0px;
   background-color: white;
-  box-shadow: 0 1px 3px 0 #e6ebf1;
   -webkit-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
 }
@@ -14,7 +13,8 @@
 .StripeElement--focus,
 .stripe-style-input:focus,
 .stripe-style-input:active {
-  box-shadow: 0 1px 3px 0 #cfd7df;
+  border-color: rgba(63, 182, 182, 0.737) !important;
+  box-shadow: 0 0 0 0.25rem rgba(63, 182, 182, 0.546);
 }
 
 .StripeElement--webkit-autofill {
@@ -64,4 +64,27 @@ select option[value=""] {
     justify-content: center;
     margin: 0;
     height: 100%;
+}
+
+/********************************* Checkout page */
+
+.edit-bag-link,
+.complete-order-link:hover,
+.back-to-profile-link,
+.all-products-link:hover {
+    border: 1px solid black !important;
+}
+
+.edit-bag-link:hover,
+.back-to-profile-link:hover {
+    background-color: rgba(63, 182, 182, 0.737);
+    color: white;
+    border: none;
+}
+
+/********************************* Checkout Success page */
+
+.order-confirmation {
+    max-width: 80%;
+    border: 2px solid rgba(23, 162, 184, .85) !important;
 }

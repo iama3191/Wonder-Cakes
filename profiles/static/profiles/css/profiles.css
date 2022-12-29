@@ -1,0 +1,7 @@
+.order-number-link {
+    color: rgba(23, 162, 184, .85) !important;
+}
+
+.order-number-link:hover {
+    color: black !important;
+}

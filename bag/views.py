@@ -5,7 +5,7 @@ from products.models import Product
 
 def view_bag(request):
     """A view to return the shopping bag page"""
-   
+
     return render(request, 'bag/bag.html')
 
 
@@ -25,7 +25,7 @@ def add_to_bag(request, item_id):
         if item_id in list(bag.keys()):
             if flavor in bag[item_id]['items_by_flavor'].keys():
                 bag[item_id]['items_by_flavor'][flavor] += quantity
-                messages.success(request, f'Updated flavor{flavor.upper()} {product.name} quantity to {bag[item_id]["items_by_flavor"][flavor]}')
+                messages.success(request, f'Updated flavor {flavor.upper()} {product.name} quantity to {bag[item_id]["items_by_flavor"][flavor]}')
             else:
                 bag[item_id]['items_by_flavor'][flavor] = quantity
                 messages.success(request, f'Added flavor {flavor.upper()} {product.name} to your bag')
@@ -45,7 +45,7 @@ def add_to_bag(request, item_id):
 
 
 def edit_bag(request, item_id):
-    """ Update (adding or removing) the quantity of the 
+    """ Update (adding or removing) the quantity of the
     product to the shopping bag """
 
     product = get_object_or_404(Product, pk=item_id)

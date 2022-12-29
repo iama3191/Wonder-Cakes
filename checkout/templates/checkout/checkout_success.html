@@ -19,18 +19,18 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col">
-            <h2 class="mb-4 text-center">Thank you for your purcharse! Hello sucker!!!</h2>
-            <hr>
+        <div class="col text-center my-3">
+            <h2 class="logo-font">Thank you for your purcharse!</h2>
+            <hr class="w-75 mx-auto separation-line">
             <p>Your order information is below. A confirmation email was sent to <strong>{{ order.email }}</strong>.</p>
         </div>
     </div>
 
-    <div class="row">
+    <div class="row d-flex justify-content-center">
         <div class="col-12 col-lg-7">
-            <div class="order-confirmation border">
+            <div class="order-confirmation mx-auto p-4">
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Order Info:</small>
@@ -41,7 +41,7 @@
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Order Number</p>
                     </div>
-                    <div class="col-12 col-md-8 text-md-right">
+                    <div class="col-12 col-md-8 text-md-end">
                         <p class="mb-0">{{ order.order_number }}</p>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Order Date</p>
                     </div>
-                    <div class="col-12 col-md-8 text-md-right">
+                    <div class="col-12 col-md-8 text-md-end">
                         <p class="mb-0">{{ order.date }}</p>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                                 {{ item.product.name }}{% if item.product_flavor %} - Flavor {{ item.product.flavor|upper }}{% endif %}
                             </p>
                         </div>
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8 text-md-end">
                             <p class="small mb-0">{{ item.quantity }} @ €{{ item.product.price }} each</p>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                         <p class="mb-0 text-black font-weight-bold">Order Total</p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.order_total }}</p>
+                        <p class="mb-0 text-end">€{{ order.order_total }}</p>
                     </div>
                 </div>
             
@@ -93,8 +93,8 @@
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Delivery</p>
                     </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.delivery_cost }}</p>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <p class="mb-0">€{{ order.delivery_cost }}</p>
                     </div>
                 </div>
             
@@ -102,25 +102,25 @@
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Grand Total</p>
                     </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.grand_total }}</p>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <p class="mb-0 mr-2">€{{ order.grand_total }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="row">
-        <div class="col-12 col-lg-7 text-right">
+    <div class="row my-4 row d-flex justify-content-center">
+        <div class="col-12 col-lg-7 text-center">
             {% if from_profile %}
-                <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
+                <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2 back-to-profile-link">
                     <span class="icon mr-2">
                         <i class="fa-solid fa-angle-left"></i>
                     </span>
                     <span class="text-uppercase">Back to Profile</span>
                 </a>
             {% else %}
-                <a href="{% url 'products' %}?category=baby_shower_cakes,wedding_cakes,birthday_cakes,cupcakes,special_ocassion_cakes,romantic_cakes,quick_cakes" class="btn btn-black rounded-0 my-2">
+                <a href="{% url 'products' %}?category=baby_shower_cakes,wedding_cakes,birthday_cakes,cupcakes,special_ocassion_cakes,romantic_cakes,quick_cakes" class="btn btn-black rounded-0 my-2 all-products-link">
                     <span class="icon mr-2">
                         <i class="fa-solid fa-cake-candles"></i>
                     </span>
