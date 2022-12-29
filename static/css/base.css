@@ -123,7 +123,8 @@ input[type=email] {
 }
 
 .shop-now-button:hover,
-.btn-suscribe:hover {
+.btn-suscribe:hover,
+.send-link:hover {
     border: 2px solid black !important;
     background: aliceblue;
     color: black;
