@@ -9,8 +9,12 @@
 {% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
 {% block inner_content %}
-    <h2>{% trans "Verify Your E-mail Address" %}</h2>
-
-    <p>{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. Please contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
+<div class="container-fluid py-4">
+    <div class="row d-flex align-items-center">
+        <h2 class="logo-font text-center">{% trans "Verify Your E-mail Address" %}</h2>
+        <hr class="w-75 mx-auto separation-line">
+        <p class="w-75 mx-auto separation-line">{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. Please contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
+    </div>
+</div>
 
 {% endblock %}
