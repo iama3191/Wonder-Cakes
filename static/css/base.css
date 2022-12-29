@@ -31,7 +31,8 @@ body {
 
 .form-control:focus,
 input[type=email]:focus,
-.navbar-toggler:focus {
+.navbar-toggler:focus,
+.form-select:focus {
     border-color: rgba(63, 182, 182, 0.737) !important;
     box-shadow: 0 0 0 0.25rem rgba(63, 182, 182, 0.546);
 }
@@ -222,17 +223,39 @@ input[type=email] {
 
 .keep-shopping-link,
 .add-to-bag:hover,
-.increment-qty:hover {
+.increment-qty:hover,
+.cancel-link,
+.update-link:hover
+.add-product-btn {
     border: 1px solid black !important;
 }
 
 .keep-shopping-link:hover,
-.decrement-qty:hover {
+.decrement-qty:hover,
+.cancel-link:hover,
+.add-product-btn:hover {
     background-color: rgba(63, 182, 182, 0.737);
     color: white;
     border: none;
 }
 
+/******************** Edit Product  */
+
+#div_id_category,
+#div_id_sku,
+#div_id_name,
+#div_id_description,
+#div_id_main_flavor,
+#div_id_has_other_flavors,
+#div_id_price,
+#div_id_image {
+    font-weight: bold;
+}
+
+.input-group-text,
+.form-control {
+    border-radius: 0;
+}
 /****************** Toast messages */
 .toast-custom {
     position: absolute;

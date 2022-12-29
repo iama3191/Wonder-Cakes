@@ -15,12 +15,11 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
-    <div class="row">
+<div class="container my-4">
+    <div class="row text-center">
         <div class="col-12 col-md-6">
-            <h2 class="mb-4 text-center">Product Management</h2>
-            <h5>Add a Product</h5>
-            <hr>
+            <h2 class="logo-font">Add a Product</h2>
+            <hr class="w-75 mx-auto separation-line">
         </div>
     </div>
     <div class="row">
@@ -29,8 +28,8 @@
                 {% csrf_token %}
                 {{ form | crispy }}
                 <div class="text-right">
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0">Cancel</a>
-                    <button class="btn btn-black rounded-0" type="submit">Add Product</button>
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 cancel-link">Cancel</a>
+                    <button class="btn btn-black rounded-0 add-product-btn" type="submit">Add Product</button>
                 </div>
             </form>
         </div>
