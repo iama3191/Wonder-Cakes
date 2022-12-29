@@ -1,26 +1,32 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
-    <div class="container header-container">
+
+{% block page_header %}
+    <div class="container">
         <div class="row">
             <div class="col"></div>
         </div>
     </div>
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 text-black">
-                    The page you are looking for isn't available
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid py-4">
+        <div class="row d-flex align-items-center text-center">
+            <div class="col col-md-6 mx-auto">
+                <h1 class="logo-font">
+                    Error 404
                 </h1>
+                <hr class="w-75 mx-auto separation-line">
+                <h4> The page you are looking for isn't available</h4>
                 <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" 
-                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">
-                                Return to shop
-                        </a>
-                    </h4>
+                    <a href="{% url 'products' %}" 
+                           class="keep-shopping-link btn btn-lg rounded-0 text-uppercasepy-3">
+                            Return to shop
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+            
 {% endblock %}
