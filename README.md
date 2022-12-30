@@ -55,8 +55,6 @@
 
 * [Testing](#testing)
 
-    * [User story testing](#user-story-testing)
-
     * [Manual testing](#manual-testing)
 
     * [Bugs ans issues](#bugs-and-issues)
@@ -226,9 +224,8 @@ This tool is from MailChimp, and it was personalized in order to fit the rest of
 
 ## Testing
 
-## 1. User story testing
 
-## 2. Manual testing
+## 1. Manual testing
 
 All the manual testing was made on the [deployed site](https://wondercakes.herokuapp.com/):
 
@@ -268,20 +265,30 @@ I have tested that this application works using Mackboor Air(Retina, 13-inch, 20
 
 This tests were made with the deployed site.
 
-| Test N° | Mobile                                                                                       | Desktop                                                                                     | Browser   |   |   |   |   |   |   |
-|---------|----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|-----------|---|---|---|---|---|---|
-| 1       | ![Mobile 1](README_documentation/browser-testing/test1-mobile-regular-browser.png)           | ![Result 1](README_documentation/browser-testing/test1-desktop-regular-browser.png)         | regular   |   |   |   |   |   |   |
-| 1       | ![Mobile 1-incognito](README_documentation/browser-testing/test1-mobile-incognito.png)       | ![Desktop 1-incognito](README_documentation/browser-testing/test1-desktop-incognito.png)    | incognito |   |   |   |   |   |   |
-| 2       | ![Mobile 2](README_documentation/browser-testing/test2-mobile-regular-browser.png)           | ![Result 2](README_documentation/browser-testing/test2-desktop-regular-browser.png)         | regular   |   |   |   |   |   |   |
-| 2       | ![Mobile 1](README_documentation/browser-testing/test1-mobile-regular-browser.png)           | ![Result 1](README_documentation/browser-testing/test1-desktop-regular-browser.png)         | incognito |   |   |   |   |   |   |
-| 3       | ![Mobile 2- regular](README_documentation/browser-testing/test3-desktop-regular-browser.png) | ![Result 3- regular](README_documentation/browser-testing/test3-mobile-regular-browser.png) | regular   |   |   |   |   |   |   |
-| 3       | ![Mobile 3](README_documentation/browser-testing/test3-mobile-incognito.png)                 | ![Result 3](README_documentation/browser-testing/test3-desktop-incognito.png)               | incognito |   |   |   |   |   |   |
-|         |                                                                                              |                                                                                             |           |   |   |   |   |   |   |
-|         |                                                                                              |                                                                                             |           |   |   |   |   |   |   |
-|         |                                                                                              |                                                                                             |           |   |   |   |   |   |   |
+
+| Test N° | Mobile                                                                                       | Desktop                                                                                     | Browser   |
+|---------|----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|-----------|
+| 1       | ![Mobile 1](README_documentation/browser-testing/test1-mobile-regular-browser.png)           | ![Result 1](README_documentation/browser-testing/test1-desktop-regular-browser.png)         | regular   |
+| 1       | ![Mobile 1-incognito](README_documentation/browser-testing/test1-mobile-incognito.png)       | ![Desktop 1-incognito](README_documentation/browser-testing/test1-desktop-incognito.png)    | incognito |
+| 2       | ![Mobile 2](README_documentation/browser-testing/test2-mobile-regular-browser.png)           | ![Result 2](README_documentation/browser-testing/test2-desktop-regular-browser.png)         | regular   |
+| 2       | ![Mobile 1](README_documentation/browser-testing/test1-mobile-regular-browser.png)           | ![Result 1](README_documentation/browser-testing/test1-desktop-regular-browser.png)         | incognito |
+| 3       | ![Mobile 2- regular](README_documentation/browser-testing/test3-mobile-regular-browser.png) | ![Result 3- regular](README_documentation/browser-testing/test3-desktop-regular-browser.png) | regular   |
+| 3       | ![Mobile 3](README_documentation/browser-testing/test3-mobile-incognito.png)                 | ![Result 3](README_documentation/browser-testing/test3-desktop-incognito.png)               | incognito |
 
 
-## 3. Bugs and issues
+### RESULTS
+
+    The performances on the regular browser were low until the extensions were removed, after that the desktop performance improved a little.
+    On the other side, we can see that the desktop performance on the incognito is over 90. And the mobile performance is under 70 because of a lot of picture content loading.
+    For the last test, it was added the 'aria-label' attribute to the <a> tags, but because I'm running out of time, I couldn't added to all the appropriate tags and run the tests once again.
+    On the regular browser, we can see how the performance for the mobile and for the desktop went up, but for the incognito mode didn't make any improvement.
+
+#### CONCLUSION
+
+    I  need more time to fix these problems, and to improve the mobile and desktop performances.
+
+
+## 2. Bugs and issues
 
 | Problem                                                                                                                                                                                                                                                           | Solution                                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -290,7 +297,7 @@ This tests were made with the deployed site.
 | Add a new field to my model.py for the products app ('main flavor'). While displaying the flavors on the product_detail.html using an if statement with a {% with %}, exactly like on the Boutiqe-Ado project. In some products it appeared two times this field. | I changed the if statement with a more simple one, and it shows the right flavor for every product. It was solved.                  |
 | After adding the footer, on my home page it seems to stick to the bottom, but on the other pages with less content, it wasn't at the same place.                                                                                                                  | I added to the body (min-height:100vh; display:flex; flex_direction:column) , and added to the footer (margin-top:auto). It solved. |
 
-## 4. Validator testing
+## 2. Validator testing
 
 ### [W3 HTML Validator](https://validator.w3.org/#validate_by_input)
 
@@ -599,27 +606,8 @@ The regular process for deployment can be found on the CI Cheat Sheet from the F
 
 * My mentor at Code Institute, Brian Macharia, for code review, help and feedback.
 
-<hr>
-
-To create an appeling website with a great UX and UI, the developer make a research throughout the best cooking blogs, with the best and worst features.
 
 
-#### Strategy
-- **Roles**
-    - User
-    - Admin
-
-
-The website needs to enable the *user* to:
-- search for recipes.
-- make comments to a recipe.
-- like and unlike recipes.
-- upload images from their experiences when adding a recipe.
-- register and log in to participate in the blog.
-- save recipes to a favorite page.
-
-The website needs to enable the *admin* to:
-- Create drafts for finishing later.
 
 
 
