@@ -140,6 +140,13 @@ I have tested that this application works using Mackboor Air(Retina, 13-inch, 20
 
 ## 3. Bugs and issues
 
+| Problem                                                                                                                                                                                                                                                           | Solution                                                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Create product.json and categories.json from scratch, I used a json formatter and when I tried to load the data, it couldn't because the syntax wasn't correct                                                                                                    | I submitted all my data into django admin, and then I dumped the data into my project and it was solved.                            |
+| Create post app where the superuser has CRUD functionalities, after creating all my templates, when I wanted to create a post as an admin, it presented the error: 'template does not exist'                                                                      | I checked urls.py and views.py, then I change the order of the urls' path and placed it on top. It was solved.                      |
+| Add a new field to my model.py for the products app ('main flavor'). While displaying the flavors on the product_detail.html using an if statement with a {% with %}, exactly like on the Boutiqe-Ado project. In some products it appeared two times this field. | I changed the if statement with a more simple one, and it shows the right flavor for every product. It was solved.                  |
+| After adding the footer, on my home page it seems to stick to the bottom, but on the other pages with less content, it wasn't at the same place.                                                                                                                  | I added to the body (min-height:100vh; display:flex; flex_direction:column) , and added to the footer (margin-top:auto). It solved. |
+
 ## 4. Validator testing
 
 ### [W3 HTML Validator](https://validator.w3.org/#validate_by_input)
@@ -148,16 +155,30 @@ This tool was used for checking all the pages of the project, on the following t
 
 | Page                                                                                                                           | Error                                                                              | Resolution                                                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Home, About, Contact, All Products, Product Detail, Add Product, Bag, Checkout success, Blog, Add post, Edit post, Delete post | ![Home result](README_documentation/html validator/home-html-w3.png)               | The code was copy directly from Mailchimp. It did not affect the functionality. In fact all the pages has  this same error because is on the footer. |
-| FAQ                                                                                                                            | ![FAQ result](README_documentation/html validator/faq-html-w3.png)                 | The <a> tag has an space after 'mailto:',  I removed it and change the subject for one word. The problem was solved.                                 |
-| Profile                                                                                                                        | ![Profile result](README_documentation/html validator/profile-html-w3.png)         | It presented to closing <tr> tags, I deleted one. The problem was solved.                                                                            |
-| Edit Product                                                                                                                   | ![Edit result](README_documentation/html validator/edit-product-html-w3.png)       | It presented a typo in the <scrip> tag, added 't'. The problem was solved.                                                                           |
-| Checkout                                                                                                                       | ![Checkout result](README_documentation/html validator/checkout-html-w3.png)       | 1. Changed the <label> tag for a div, and remove the  for attribute. 2. Changed the <h1> tag for a <div> for the spinner.  The problem was solved.   |
-| Post Detail                                                                                                                    | ![Post detail result](README_documentation/html validator/post-detail-html-w3.png) | The <div> tag had an unclosed <small> tag, after adding '/' the problem was solved                                                                   |
+| Home, About, Contact, All Products, Product Detail, Add Product, Bag, Checkout success, Blog, Add post, Edit post, Delete post | ![Home result](README_documentation/html-validator/home-html-w3.png)               | The code was copy directly from Mailchimp. It did not affect the functionality. In fact all the pages has  this same error because is on the footer. |
+| FAQ                                                                                                                            | ![FAQ result](README_documentation/html-validator/faq-html-w3.png)                 | The <a> tag has an space after 'mailto:',  I removed it and change the subject for one word. The problem was solved.                                 |
+| Profile                                                                                                                        | ![Profile result](README_documentation/html-validator/profile-html-w3.png)         | It presented to closing <tr> tags, I deleted one. The problem was solved.                                                                            |
+| Edit Product                                                                                                                   | ![Edit result](README_documentation/html-validator/edit-product-html-w3.png)       | It presented a typo in the <scrip> tag, added 't'. The problem was solved.                                                                           |
+| Checkout                                                                                                                       | ![Checkout result](README_documentation/html-validator/checkout-html-w3.png)       | 1. Changed the <label> tag for a div, and remove the  for attribute. 2. Changed the <h1> tag for a <div> for the spinner.  The problem was solved.   |
+| Post Detail                                                                                                                    | ![Post detail result](README_documentation/html-validator/post-detail-html-w3.png) | The <div> tag had an unclosed <small> tag, after adding '/' the problem was solved                                                                   |
 
 ### [CC3 W3 Validator](https://jigsaw.w3.org/css-validator)
 
+This tool was used on the next files:
+
+* base.css
+* profiles.css
+* checkout.css
+
+This files didn't present errors or warnings.
+
+ ![CSS result](README_documentation/js-css-validator/base-css-validated.png)
+
 ### [JShint Validator](https://jshint.com/)
+
+This tool was used for the stripe_element.js file and got three warnings, a semicolon was added on line 117
+
+ ![js result](README_documentation/js-css-validator/stripe_element-jshint.png)
 
 ## Deplpoyment
 
