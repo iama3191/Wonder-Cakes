@@ -88,8 +88,8 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <a class="edit-link update-link text-info text-decoration-none border-0"><small>Update</small></a>
-                                    <a class="text-danger remove-item float-right text-decoration-none delete-link" id="remove_{{ item.item_id }}" data-product_flavor="{{ item.flavor }}"><small>Remove</small></a>
+                                    <a class="edit-link update-link text-info text-decoration-none border-0" aria-label="Update the item of the shopping bag"><small>Update</small></a>
+                                    <a class="text-danger remove-item float-right text-decoration-none delete-link" id="remove_{{ item.item_id }}" aria-label="Remove the item from the shopping bag" data-product_flavor="{{ item.flavor }}"><small>Remove</small></a>
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0">€{{ item.product.price| calc_subtotal:item.quantity }}</p>
@@ -110,13 +110,13 @@
                         </tr>
                         <tr>
                             <td colspan="5" class="text-end">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg keep-shopping-link">
+                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg keep-shopping-link" aria-label="keep back to shopping">
                                     <span class="icon">
                                         <i class="fa-solid fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg secure-checkout-link">
+                                <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg secure-checkout-link" aria-label="Go to checkout">
                                     <span class="text-uppercase">Secure Checkout</span>
                                     <span class="icon">
                                         <i class="fa-solid fa-lock"></i>
@@ -128,7 +128,7 @@
                 </div>
             {% else %}
                 <p class="lead text-center">Your bag is empty.</p>
-                <a href="{% url 'products' %}" class="btn rounded-0 btn-lg keep-shopping-link bag-shopping-link mx-auto d-flex justify-content-center align-middle">
+                <a href="{% url 'products' %}" class="btn rounded-0 btn-lg keep-shopping-link bag-shopping-link mx-auto d-flex justify-content-center align-middle" aria-label="Go back for shopping">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
                     </span>

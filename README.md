@@ -113,8 +113,6 @@ Most of the features have been designed to look the same, to allow users to gain
 
 ![Add product](README_documentation/pages-img/add-product.png)
 
-![Edit products](README_documentation/pages-img/README_documentation/pages-img/edit-product.png)
-
 ![Contact form](README_documentation/pages-img/Contact_us.png)
 
 ![Profile form](README_documentation/pages-img/profile.png)
@@ -210,13 +208,13 @@ The used tool was Facebook for the number of users, and that would be excelent i
 
 A [Facebook page](https://www.facebook.com/WonderCakes22) was created.
 
-[About](README_documentation/social-media-marketing/fb-1.png)
+![About](README_documentation/social-media-marketing/fb-1.png)
 
-[Post](README_documentation/social-media-marketing/fb-3.png)
+![Post](README_documentation/social-media-marketing/fb-3.png)
 
-[Hero image](README_documentation/social-media-marketing/fb-4.png)
+![Hero image](README_documentation/social-media-marketing/fb-4.png)
 
-[Album post](README_documentation/social-media-marketing/fb-5.png)
+![Album post](README_documentation/social-media-marketing/fb-5.png)
 
 ### Email marketing
 
@@ -224,7 +222,7 @@ It was implemented an email marketing feature on the footer where the user can s
 
 This tool is from MailChimp, and it was personalized in order to fit the rest of the project.
 
-[MailCchimp](README_documentation/extra-img/mailchimp.png)
+![MailCchimp](README_documentation/extra-img/mailchimp.png)
 
 ## Testing
 
