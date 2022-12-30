@@ -600,11 +600,12 @@ The regular process for deployment can be found on the CI Cheat Sheet from the F
 
 - [Magnolia baker](!https://www.magnoliabakery.com/): Inspired and helped to understand how this type of business works.
 
-### 4. Media
 
 ## Acknowledgments
 
 * My mentor at Code Institute, Brian Macharia, for code review, help and feedback.
+
+* My husband and daugther for all the support.
 
 
 
