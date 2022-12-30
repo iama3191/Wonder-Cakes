@@ -2,7 +2,6 @@
 html{
     min-height: 100%;
 }
-
 body {
     margin: 0;
     min-height: 100vh;
@@ -10,13 +9,11 @@ body {
     flex-direction: column;
     font-family: 'Lato', sans-serif;
 }
-
 /****************************** Navbar */
 .logo-font {
     font-family: 'Norican', cursive;
     font-size: 3rem;
 }
-
 .icon {
     align-items: center;
     display: inline-flex;
@@ -24,80 +21,59 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
-
-.nav-icon:hover,
-.footer-icon:hover,
-.fa-magnifying-glass:hover,
-.fa-cart-shopping:hover,
-.fa-user:hover {
+.nav-icon:hover, .footer-icon:hover, .fa-magnifying-glass:hover, .fa-cart-shopping:hover, .fa-user:hover {
     color: rgba(63, 182, 182, 0.737);
 }
-
-.form-control:focus,
-input[type=email]:focus,
-.navbar-toggler:focus,
-.form-select:focus,
-#sort-selector:focus {
+.form-control:focus, input[type=email]:focus, .navbar-toggler:focus, .form-select:focus, #sort-selector:focus {
     border-color: rgba(63, 182, 182, 0.737) !important;
     box-shadow: 0 0 0 0.25rem rgba(63, 182, 182, 0.546);
 }
-
 /********************* Footer */
 footer {
     margin-top: auto;
 }
-
 input[type=email] {
     border: 1px solid #ced4da;
 }
-
 .promotion {
     background-color: black !important;
 }
-
 .footer-icon {
     font-size: 20px;
     color: white;
 }
-
 .social-icon {
     font-size: 30px;
 }
-
 .odd-icon-1 {
     color: rgb(28, 144, 252);
 }
-
 .odd-icon-2 {
     color: rgb(241 30 31);
 }
-
 .even-icon-1 {
     color: #00c302;
 }
-
 .even-icon-2 {
     color: orange;
 }
-
 .btn-suscribe {
     text-transform: uppercase;
     padding: 10px;
     letter-spacing: 1.5px;
 }
-
 /*************************** Hero image */
 .hero-image {
     height: calc(100vh - 150px);
     width:100%;
-    /* display: flex; */
+   /* display: flex;
+    */
     background: url('/media/hero-image-background.jpg') no-repeat center center;
     background-color: rgb(174 230 242);
     background-size: cover;
     justify-content: center;
     position: relative;
 }
-
 .overlay {
     height: 100%;
     width: 100%;
@@ -105,42 +81,31 @@ input[type=email] {
     left: 0;
     position: fixed;
     background: white;
-    z-index: -1;  
+    z-index: -1;
 }
-
 .hero-text {
     position: absolute;
     text-align: right;
     bottom: 35%;
     right: 10%;
 }
-
-.shop-now-button,
-.btn-black,
-.btn-suscribe {
+.shop-now-button, .btn-black, .btn-suscribe {
     background-color: black;
     color: aliceblue;
 }
-
-.shop-now-button:hover,
-.btn-suscribe:hover,
-.send-link:hover {
+.shop-now-button:hover, .btn-suscribe:hover, .send-link:hover {
     border: 2px solid black !important;
     background: aliceblue;
     color: black;
 }
-
 /************************** About us page */
-
 .about-container {
-    padding-top: 20px
+    padding-top: 20px 
 }
-
 .separation-line {
     border-top-width: 5px;
     color:rgb(121, 232, 225);
 }
-
 .about-img {
     width: 100%;
     max-width: 400px !important;
@@ -149,25 +114,17 @@ input[type=email] {
     margin-left: auto;
     margin-right: auto;
 }
-
-.contact-link,
-.faq-link {
+.contact-link, .faq-link {
     background-color: rgba(63, 182, 182, 0.737);
 }
-
-.contact-link:hover,
-.faq-link:hover {
+.contact-link:hover, .faq-link:hover {
     color: rgba(63, 182, 182, 0.737) !important;
     background-color: white;
 }
-
-/***************** FAQ page  */
-
-.faq,
-.profile {
+/***************** FAQ page */
+.faq, .profile {
     letter-spacing: 3px;
 }
-
 .faq-container {
     line-height: 22px;
 }
@@ -178,16 +135,11 @@ input[type=email] {
     bottom: 300px;
     right: 10px;
 }
-
-/******************** All Products page  */
-
-.product-container,
-.post-container {
+/******************** All Products page */
+.product-container, .post-container {
     padding-bottom: 40px;
 }
-
-.product-img,
-.post-img {
+.product-img, .post-img {
     width: 100%;
     height: 20vw;
     object-fit: scale-down;
@@ -196,104 +148,57 @@ input[type=email] {
     border-radius: 15px;
     align-items: center;
 }
-
-.edit-link,
-.delete-link {
+.edit-link, .delete-link {
     font-size: 18px;
 }
-
-.edit-link:hover,
-.delete-link:hover {
+.edit-link:hover, .delete-link:hover {
     color: black !important;
 }
-
 .top-link {
     background-color: rgba(63, 182, 182, 0.737);
     color: white;
     border-radius: 30px;
 }
-
 .top-link:hover{
     color: black;
 }
-
-.top-link,
-.update-link,
-.remove-item,
-.read-more-link:hover {
+.top-link, .update-link, .remove-item, .read-more-link:hover {
     cursor: pointer;
 }
-
-.product-link:hover,
-.category-link:hover,
-.read-more-link {
+.product-link:hover, .category-link:hover, .read-more-link {
     color: rgb(63, 182, 182) !important;
 }
-
 .border-info {
     border-color:rgb(205, 204, 204)!important;
     padding: 3px;
 }
-
 .category-badge {
     letter-spacing: 2px;
 }
-
 .card:hover {
     border: 2px solid rgb(63, 182, 182);
 }
-
 /******************** Product detail page */
-
-.keep-shopping-link,
-.add-to-bag:hover,
-.secure-checkout-link:hover,
-.increment-qty:hover,
-.cancel-link,
-.increment-qty,
-.update-link:hover,
-.add-product-btn,
-.return-blog-link {
+.keep-shopping-link, .add-to-bag:hover, .secure-checkout-link:hover, .increment-qty:hover, .cancel-link, .increment-qty, .update-link:hover, .add-product-btn, .return-blog-link {
     border: 1px solid black !important;
 }
-
-.keep-shopping-link:hover,
-.decrement-qty:hover,
-.cancel-link:hover,
-.add-product-btn:hover,
-.allauth-button:hover,
-.return-blog-link:hover {
+.keep-shopping-link:hover, .decrement-qty:hover, .cancel-link:hover, .add-product-btn:hover, .allauth-button:hover, .return-blog-link:hover {
     background-color: rgba(63, 182, 182, 0.737) !important;
     color: white;
     border: none;
 }
-
-/******************** Edit Product  */
-
-#div_id_category,
-#div_id_sku,
-#div_id_name,
-#div_id_description,
-#div_id_main_flavor,
-#div_id_has_other_flavors,
-#div_id_price,
-#div_id_image {
+/******************** Edit Product */
+#div_id_category, #div_id_sku, #div_id_name, #div_id_description, #div_id_main_flavor, #div_id_has_other_flavors, #div_id_price, #div_id_image {
     font-weight: bold;
 }
-
-.input-group-text,
-.form-control {
+.input-group-text, .form-control {
     border-radius: 0;
 }
-
-/*********************** Bag page  */
-
+/*********************** Bag page */
 .bag-shopping-link {
     width: fit-content;
 }
-
 /****************** Toast messages */
-
 .toast-custom {
     position: absolute;
     top: 20px;
@@ -301,90 +206,69 @@ input[type=email] {
     overflow: visible;
     z-index: 100000;
 }
-
 .toast-border-success {
     border-left: 4px solid green;
 }
-
 .toast-border-error {
     border-left: 4px solid red;
 }
-
 .toast-border-warning {
     border-left: 4px solid rgb(247, 212, 16);
 }
-
 .toast-border-info {
     border-left: 4px solid rgb(81, 198, 240);
-
 }
-
 .bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
 }
-
 .toast-button {
     position: absolute;
     top: 10px;
     right: 5px;
 }
-
 /****************** Allauth account */
-
 .account-link {
     color: rgba(23, 162, 184, .85) !important;
 }
-
 .account-link:hover {
     color: black !important;
 }
-
 /* Milchimp */
-
 #mc_embed_signup {
     background:#fff;
     clear:left;
-    font:14px Helvetica,Arial,sans-serif; 
+    font:14px Helvetica,Arial,sans-serif;
     width:600px;
 }
-
-/********************** Post detail page  */
-
+/********************** Post detail page */
 .post-img-detail {
     width: 100%;
-    height: 40w;
+    height: 40vw;
     object-fit: scale-down;
     min-height: 250px;
     padding: 3%;
     border-radius: 15px;
     align-items: center;
 }
-
 /* -------------------------------- Media Queries */
-
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-      max-width: 80%;
-    }
-  }
-  
-  /* fixed top navbar only on medium and up */
-  @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
-      }
-  
-      .header-container {
-          padding-top: 100px;
-      }
-  }
-
-  
- 
+        max-width: 80%;
+   }
+}
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+   }
+    .header-container {
+        padding-top: 100px;
+   }
+}
