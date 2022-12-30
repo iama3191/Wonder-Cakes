@@ -22,7 +22,7 @@ body {
     width: 1.5rem;
 }
 .nav-icon:hover, .footer-icon:hover, .fa-magnifying-glass:hover, .fa-cart-shopping:hover, .fa-user:hover {
-    color: rgba(63, 182, 182, 0.737);
+    color: #3fb6b6bc;
 }
 .form-control:focus, input[type=email]:focus, .navbar-toggler:focus, .form-select:focus, #sort-selector:focus {
     border-color: rgba(63, 182, 182, 0.737) !important;
@@ -65,10 +65,9 @@ input[type=email] {
 /*************************** Hero image */
 .hero-image {
     height: 70vh;
-
     width:100%;
     background: url('/media/hero-image-background.jpg') no-repeat center center;
-    background-color: rgb(174 230 242);
+    background-color: #aee6f2;
     background-size: cover;
     justify-content: center;
     position: relative;
@@ -165,7 +164,7 @@ input[type=email] {
     cursor: pointer;
 }
 .product-link:hover, .category-link:hover, .read-more-link {
-    color: rgb(63, 182, 182) !important;
+    color: #3fb6b6 !important;
 }
 .border-info {
     border-color:rgb(205, 204, 204)!important;
@@ -251,6 +250,7 @@ input[type=email] {
     border-radius: 15px;
     align-items: center;
 }
+
 /* -------------------------------- Media Queries */
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {

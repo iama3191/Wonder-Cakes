@@ -23,8 +23,6 @@
 
         * [Consistent features implemented](#consistent-features-implemented)
 
-        * [Unique features implemented](#unique-features-implemented)
-
         * [Features left to implement](#features-left-to-implement)
 
     * [Structure](#structure)
@@ -86,45 +84,147 @@
 
 ### Project overview
 
+This is a fictitious project that is part of the Diploma in Full Stack Software Development (E-commerce Applications) 
+
+"Wonder Cakes" is an online store aimed directly at consumers (B2C) who need personalized cakes for special occasions. The consumer has an online catalog so that he can select and customize his product, as well as a date for order’s delivery.
+The consumer will have the opportunity to register and create a profile to complete the purchase or simply to save the order and be able to edit it if necessary.
+
+
 ### Project goals
+
+[Here](https://github.com/iama3191/PP5-CI/issues) is a list of user stories displayed as a Kanban board.
 
 ### User Stories 
 
-## 2. Scope
+## 2. Scope 
 
 ### Consistent features implemented
 
+Most of the features have been designed to look the same, to allow users to gain familiarity with the site layout and enable them to find information quickly.
+
+
+* Card design for main layout
+
+![All products](README_documentation/pages-img/all-products.png)
+
+![Blog Posts](README_documentation/pages-img/blog.png)
+
+* Form submission
+
+![Add product](README_documentation/pages-img/add-product.png)
+
+![Edit products](README_documentation/pages-img/README_documentation/pages-img/edit-product.png)
+
+![Contact form](README_documentation/pages-img/Contact_us.png)
+
+![Profile form](README_documentation/pages-img/profile.png)
+
+
 ### Unique features implemented
 
+* Footer has some colors that are combined with the hero image on the home page
+
+![Footer](README_documentation/pages-img/footer.png)
+
 ### Future features
+
+Refer to the future improvements of [user story](https://github.com/users/iama3191/projects/8).
 
 ## 3. Structure
 
 ### Database model
 
+For this project, the database model was created from scratched, searching for different options on the web, and creating a particular data base.
+
 ### Applications
+
+In this project, seven applications have been created:
+
+* Home
+
+* Wonder_cakes
+
+* Bag
+
+* Blog
+
+* Checkout
+
+* Contact
+
+* Products
+
+The custom models for PP5 are in:
+
+* Products app
+
+* Blog app
+
+* Contact app
 
 ## 4. Skeleton
 
 ### Wireframes
 
+ At the beginning of the project, after researching about prices and how a cake shop website looks like, I started to create a low fidelity wirefram for some of the pages I created after. At the end, the design was fixed with small changes for a better UX design.
+
+![wireframe 1](README_documentation/wireframes/low-fidelity-1.jpeg)
+
+![wireframe 2](README_documentation/wireframes/low-fidelity-2.jpeg)
+
+![wireframe 3](README_documentation/wireframes/low-fidelity-3.jpeg)
+
+![wireframe 4](README_documentation/wireframes/low-fidelity-4.jpeg)
+
+![wireframe 5](README_documentation/wireframes/low-fidelity-5.jpeg)
+
+![wireframe 6](README_documentation/wireframes/low-fidelity-6.jpeg)
+
+![wireframe 7](README_documentation/wireframes/low-fidelity-7.jpeg)
+
 ## 5. Surface
 
 #### Color scheme
 
+The color scheme used where colorful, fresh and minimalist colors because the main focus were on the product images.
+
+![color scheme](README_documentation/extra-img/color-scheme.png)
+
 ### Typography
+
+Two fonts were selected from Google Fonts: Lato and Norican. The first one was selected because is easily readable and the second one was selected for special headings because is very similar to the typography from the icon.
 
 ### Imagery
 
+The images for the project were selected from many free services of photo banks. For more information about this, go to Frameworks, Libraries & Programs Used at the end of this document.
+
 ## 6. Web marketing
+
+The web marketing techniques implemented in this project have been inspired from the Code Institute series of videos on Introduction to Search Engine Optimization and Web Marketing, for the Full Stack Development (E-commerce applications) course.
 
 ### SEO
 
 ### Social media marketing
 
+The used tool was Facebook for the number of users, and that would be excelent in a real business if the person knows how to deal with this platform.
+
+A [Facebook page](https://www.facebook.com/WonderCakes22) was created.
+
+[About](README_documentation/social-media-marketing/fb-1.png)
+
+[Post](README_documentation/social-media-marketing/fb-3.png)
+
+[Hero image](README_documentation/social-media-marketing/fb-4.png)
+
+[Album post](README_documentation/social-media-marketing/fb-5.png)
+
 ### Email marketing
 
-### Privacy policy
+It was implemented an email marketing feature on the footer where the user can submit his email for a newsletter.
+
+This tool is from MailChimp, and it was personalized in order to fit the rest of the project.
+
+[MailCchimp](README_documentation/extra-img/mailchimp.png)
 
 ## Testing
 
