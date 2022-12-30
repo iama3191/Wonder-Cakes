@@ -1,8 +1,11 @@
 
 # Wonder Cakes
 
+![Am I Responsive](README_documentation/extra-img/am-i-responsive.png)
 
 [View the live project here](https://wondercakes.herokuapp.com/ "Link to deployed site - Wonder Cakes")
+
+<hr>
 
 ## Table of contents
 
@@ -140,6 +143,17 @@ I have tested that this application works using Mackboor Air(Retina, 13-inch, 20
 ## 4. Validator testing
 
 ### [W3 HTML Validator](https://validator.w3.org/#validate_by_input)
+
+This tool was used for checking all the pages of the project, on the following table is presented the warnings for each page and their resolution.
+
+| Page                                                                                                                           | Error                                                                              | Resolution                                                                                                                                           |
+|--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Home, About, Contact, All Products, Product Detail, Add Product, Bag, Checkout success, Blog, Add post, Edit post, Delete post | ![Home result](README_documentation/html validator/home-html-w3.png)               | The code was copy directly from Mailchimp. It did not affect the functionality. In fact all the pages has  this same error because is on the footer. |
+| FAQ                                                                                                                            | ![FAQ result](README_documentation/html validator/faq-html-w3.png)                 | The <a> tag has an space after 'mailto:',  I removed it and change the subject for one word. The problem was solved.                                 |
+| Profile                                                                                                                        | ![Profile result](README_documentation/html validator/profile-html-w3.png)         | It presented to closing <tr> tags, I deleted one. The problem was solved.                                                                            |
+| Edit Product                                                                                                                   | ![Edit result](README_documentation/html validator/edit-product-html-w3.png)       | It presented a typo in the <scrip> tag, added 't'. The problem was solved.                                                                           |
+| Checkout                                                                                                                       | ![Checkout result](README_documentation/html validator/checkout-html-w3.png)       | 1. Changed the <label> tag for a div, and remove the  for attribute. 2. Changed the <h1> tag for a <div> for the spinner.  The problem was solved.   |
+| Post Detail                                                                                                                    | ![Post detail result](README_documentation/html validator/post-detail-html-w3.png) | The <div> tag had an unclosed <small> tag, after adding '/' the problem was solved                                                                   |
 
 ### [CC3 W3 Validator](https://jigsaw.w3.org/css-validator)
 
@@ -293,7 +307,7 @@ The regular process for deployment can be found on the CI Cheat Sheet from the F
         * Add 'storages' to 'installed apps' in settings.py
         * To connect Django to S3: add the below code in settings.py 
 
-        ![connect Django to S3](#)
+        ![connect Django to S3](README_documentation/extra-img/step5-aws.png)
 
     * In Heroku app config vars- add the following keys: USE_AWS(value=True), AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY (values from the csv file).
 
@@ -301,7 +315,7 @@ The regular process for deployment can be found on the CI Cheat Sheet from the F
 
     * In the main project directory in Gitpod, create a file calles 'custom_storages.py' and add the following code to tell Django to use S3 to store static and media files:
 
-        ![S3 store static media files](#)
+        ![S3 store static media files](README_documentation/extra-img/step5-aws-store-mediafiles.png)
 
     * Commit changes to Github.
 
