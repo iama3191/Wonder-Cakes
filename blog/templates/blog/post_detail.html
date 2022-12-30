@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_title %}
-   <title>Wonder Cakes | {{ post.name }} </title>
+   <title>Wonder Cakes | {{ post.title}} </title>
 {% endblock %}
 
 {% block page_header %}
@@ -18,34 +18,39 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center my-3">
-                <h2 class="logo-font">Wonder Cakes Blog</h2>
+                <h2 class="logo-font">Wonder Cakes Blog | {{ post.title }}</h2>
                 <hr class="w-75 mx-auto separation-line">
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
-                <h3 class="logo-font text-center mt-3">
-                    {{ post.title }}
-                </h3>
-                <hr class="w-75 mx-auto separation-line">
                 <p class="lead text-center text-capitalize">Author: {{ post.author }} </p>
                 <p class="lead text-center">{{ post.date }}</p>
-                {% if user.is_superuser %}
-                <div class="d-flex">
-                    <a href="{% url 'edit_post' post.slug %}" class="edit-link"><i class="fa-solid fa-pen-to-square"></i></a> | 
-                    <a class="px-3 delete-link" href="{% url 'delete_post' post.slug %}"><i class="fa-solid fa-trash"></i></a>
+                {% if request.user.is_superuser %}
+                <div class="text-center">
+                    <small>
+                        <a href="{% url 'edit_post' post.slug %}" class="edit-link"><i class="fa-solid fa-pen-to-square"></i></a> 
+                        <a class="text-danger px-3 delete-link" href="{% url 'delete_post' post.slug %}"><i class="fa-solid fa-trash"></i></a>
+                    <small>
                 </div>
                 {% endif %}
-                {% if post.image %}
-                <div class="bouquet-img-center">
-                    <img class="card-img-top img-fluid post-detail-img rounded-lg" src="{{ post.image.url }}" alt="{{ post.name }}">
+                <div class="image-container text-center">
+                    {% if post.image %}
+                    <img class="card-img-top img-fluid post-img-detail w-75" src="{{ post.image.url }}" alt="{{ post.name }}">
+                    {% else %}
+                    <img class="card-img-top img-fluid post-img-detail w-75" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.name }}">
+                    {% endif %}
                 </div>
-                {% else %}
-                <div class="bouquet-img-center">
-                    <img class="card-img-top img-fluid post-detail-img rounded-lg" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.name }}">
-                </div>
-                {% endif %}
-                <p class="lead mt-2 text-justify">{{ post.body }}</p>
+                <p class="lead mt-2 text-center">{{ post.body }}</p>
+            </div>
+
+            <div class="col-12 text-center mb-5">
+                <a href="{% url 'blog' %}" class="btn rounded-0 mt-5 return-blog-link">
+                    <span class="icon">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">Return to Blog</span>
+                </a>
             </div>
         </div>
     </div>
