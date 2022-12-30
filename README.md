@@ -266,14 +266,19 @@ I have tested that this application works using Mackboor Air(Retina, 13-inch, 20
 
 * Google Version 105.0.5195.125 (Official Build) (arm64)
 
-This tests were made with the deployed site on a regular browser and on incognito.
+This tests were made with the deployed site.
 
-
-## TEST 1
-
-Regular Browser
-
-![Mobile](README_documentation/browser testing/test1-mobile-regular-browser.png)
+| Test N° | Mobile                                                                                       | Desktop                                                                                     | Browser   |   |   |   |   |   |   |
+|---------|----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|-----------|---|---|---|---|---|---|
+| 1       | ![Mobile 1](README_documentation/browser-testing/test1-mobile-regular-browser.png)           | ![Result 1](README_documentation/browser-testing/test1-desktop-regular-browser.png)         | regular   |   |   |   |   |   |   |
+| 1       | ![Mobile 1-incognito](README_documentation/browser-testing/test1-mobile-incognito.png)       | ![Desktop 1-incognito](README_documentation/browser-testing/test1-desktop-incognito.png)    | incognito |   |   |   |   |   |   |
+| 2       | ![Mobile 2](README_documentation/browser-testing/test2-mobile-regular-browser.png)           | ![Result 2](README_documentation/browser-testing/test2-desktop-regular-browser.png)         | regular   |   |   |   |   |   |   |
+| 2       | ![Mobile 1](README_documentation/browser-testing/test1-mobile-regular-browser.png)           | ![Result 1](README_documentation/browser-testing/test1-desktop-regular-browser.png)         | incognito |   |   |   |   |   |   |
+| 3       | ![Mobile 2- regular](README_documentation/browser-testing/test3-desktop-regular-browser.png) | ![Result 3- regular](README_documentation/browser-testing/test3-mobile-regular-browser.png) | regular   |   |   |   |   |   |   |
+| 3       | ![Mobile 3](README_documentation/browser-testing/test3-mobile-incognito.png)                 | ![Result 3](README_documentation/browser-testing/test3-desktop-incognito.png)               | incognito |   |   |   |   |   |   |
+|         |                                                                                              |                                                                                             |           |   |   |   |   |   |   |
+|         |                                                                                              |                                                                                             |           |   |   |   |   |   |   |
+|         |                                                                                              |                                                                                             |           |   |   |   |   |   |   |
 
 
 ## 3. Bugs and issues
