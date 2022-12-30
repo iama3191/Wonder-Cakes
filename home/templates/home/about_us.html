@@ -29,8 +29,19 @@
             <div class="col-md-6 offset-md-3 text-center mx-auto">
                 <p class="mt-3 mx-3"><strong>Wonder cakes </strong>is an online store in charge of the preparation, sale and delivery of delicious  hand-crafted cakes and cupcakes for any occasion. With more than 10 years of experience, we have decorated and delivered delicious cakes for many special events: birthdays, weddings, baptisms, etc.</p>
                 <p class="mt-3 mx-3">Our cakes are made from the highest quality ingredients. Please find out more about ingredients and allergens.</p>
-                <p class="mt-3 mx-3">To discuss your requirements on more detail with our team, please <a class="contact-link text-decoration-none text-black px-1 py-1" href="#"><strong>contact us here</strong></a>.</p>
+                <p class="mt-3 mx-3">To discuss your requirements on more detail with our team, please <a class="contact-link text-decoration-none text-black px-1 py-1" href="{% url 'contact' %}"><strong>contact us here</strong></a>.</p>
             </div>
+        </div>
+        <div class="col-12 text-center mb-4">
+            <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2 all-products-link">
+                <span class="icon">
+                    <i class="fa-solid fa-cake-candles"></i>
+                </span>
+                <span class="text-uppercase">All products</span>
+            </a>
+            <a href="{% url 'blog' %}" class="btn btn-black rounded-0 my-2 blog-link">
+                <span class="text-uppercase">Blog</span>
+            </a>
         </div>
     </div>
 {% endblock %}

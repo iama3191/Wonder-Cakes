@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 class Contact(models.Model):
     """ Contact model for database """
@@ -22,7 +21,7 @@ class Contact(models.Model):
     subject = models.CharField(
         max_length=20,
         choices=SUBJECT_CHOICES,
-        default="Bouquets"
+        default="Cakes"
     )
     query = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
