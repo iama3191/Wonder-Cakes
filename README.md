@@ -2,7 +2,7 @@
 # Wonder Cakes
 
 
-[View the live project here](https://my-mommy-and-me.herokuapp.com/ "Link to deployed site - Wonder Cakes")
+[View the live project here](https://wondercakes.herokuapp.com/ "Link to deployed site - Wonder Cakes")
 
 ## Table of contents
 
@@ -148,56 +148,178 @@ I have tested that this application works using Mackboor Air(Retina, 13-inch, 20
 
 The regular process for deployment can be found on the CI Cheat Sheet from the Full Stack Framework.
 
-<hr>
-Need to check this 
+### Prerequesites
 
-1. How to clone the repository
-2. Create Application and Postgres DB on Heroku
-3. Configure Cloudinary to host images used by the application
-4. Connect the Heroku app to the GitHub repository
-5. Final Deployment steps
+1. Create a repository and workspace
 
-<hr>
+* Create a repository in Github - using the Code Institute [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template "Link to gitpod template")
 
-### How to clone the repository
+* Click on the green Gitpod button to load the repository workspace in Gitpod.
 
-When you clone a repository, you copy the repository from GitHub.com to your local machine.
+2. Install Django
 
-1. Go to the https://github.com/iama3191/PP5-CI repository on GitHUb.
+* Install Django and Gunicorn ( it will be used to run Django on Heroku) and type the following command in the terminal:
 
-2. Click the 'Code' button to the right-hand side, then click HTTPs and copy the link there.
+        pip3 install Django=3.2 gunicorn
 
-3. Open a GitBash terminal and navigate to the directory where you want to locate the clone.
+3. Add python code to .gitgnore file, that are not required in version control
 
-4. On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process.
+        *.sqlite3
+        *.pyc
+        __pycache
 
-5. To install the packages required by the application use the command : pip install -r requirements.txt.
+4. Check that the project's installation is ok by running it on the server, type in the terminal:
 
-6. When developing and running the application locally set DEBUG=True in the settings.py file.
+        python3 manage.py runserver
 
-7. Changes made to the local clone can be pushed back to the repository using the following commands:
+    Then open un Port 8000 and the server should say that "The install worked successfully"
 
-* git add filenames (or "." to add all changed files)
-* git commit -m "text message describing changes"
-* git push
+5. Run initial migrations with the following code:
 
-Any changes pushed to the master branch will take effect on the live project once the application is re-deployed from Heroku.
+        python3 manage.py migrate
 
-### Final Deployment steps
+6. Create a superuser, type into the terminal:
 
-Once code changes have been completed and tested on localhost, the application can be prepared for Heroku deployment as follows:
+        python3 managepy createsuperuser
 
-1. Set DEBUG flag to False in settings.py.
+    and add username, email and password
 
-2. Ensure this line exists in settings.py to make summernote work on the deployed environment (CORS security feature): X_FRAME_OPTIONS = 'SAMEORIGIN'.
+7. Make initial commit to Github by typing the following code:
 
-3. Ensure requirements.txt is up to date using the command : pip3 freeze --local > requirements.txt.
+        git add .
+        git commit -m "Initial commit"
+        git push
 
-4. Push files to GitHub
+### Deployment
 
-5. In the Heroku Config Vars for the application delete this environment variable : DISABLE_COLLECTSTATIC.
+1. Create an external database, using ElephantSQL.
 
-6. On the Heroku dashboard go to the Deploy tab for the application and click on deploy branch.
+    * Log in to [ElephantSQL.com](!https://www.elephantsql.com/) to access your dashboard.
+
+    * Click the green button 'Create a New Instance'.
+
+    * Set up your plan
+
+        * Give your plan a Name (this is commonly the name of the project)
+        * Select the Tiny Turtle (Free) plan
+        * You can leave the Tags field blank
+
+    * Select a data center near you.
+
+    * Then click the 'Review' button.
+
+    * Check your details are correct and then click “Create instance” button.
+
+    * Return to the ElephantSQL dashboard and click on the database instance name for this project.
+
+    * In the URL section, clicking the copy icon will copy the database URL to your clipboard.
+
+2. Create a new Heroku app
+
+    * Go to [Heorku Dashbord](https://dashboard.heroku.com/) and click 'New' to create a new app.
+
+    * Give your app a name and select the region closest to you. When you’re done, click Create app to confirm.
+
+    * Open the Settings tab.
+
+    * Add the config var DATABASE_URL, and for the value, copy in your database url from ElephantSQL.
+
+3. In the terminal in Gitpod:
+ 
+    * Install dj_database_url and psycopg2, both of these are needed to connect to your external database.
+
+        pip3 install dj_database_url==0.5.0 psycopg2
+
+    * Update your requirements.txt file with the newly installed packages
+
+        pip freeze > requirements.txt
+
+    * In your settings.py file, import dj_database_url underneath the import for os
+
+        import os
+        import dj_database_url
+
+    * Scroll to the DATABASES section and update it to the following code, so that the original connection to sqlite3 is commented out and we connect to the new ElephantSQL database instead. Paste in your ElephantSQL database URL in the position indicated.
+
+    * In the terminal, run the showmigrations command to confirm you are connected to the external database
+
+        python3 manage.py showmigrations
+
+    *  If you are, you should see a list of all migrations, but none of them are checked off
+
+    * Migrate your database models to your new database
+
+        python3 manage.py migrate
+
+    * Load in the fixtures. Please note the order is very important here. We need to load categories first
+
+        python3 manage.py loaddata categories
+
+    * Then products, as the products require a category to be set
+
+        python3 manage.py loaddata products
+
+    * Create a superuser for your new database
+
+        python3 manage.py createsuperuser
+
+4. Confirming your database
+
+    * On the ElephantSQL page for your database, in the left side navigation, select “BROWSER”
+
+    * Click the Table queries button, select auth_user
+
+    * When you click “Execute”, you should see your newly created superuser details displayed. This confirms your tables have been created and you can add data to your database.
+
+5. Set up hosting for the static and media files with AWS (Amazon Web Services).
+
+    * Create user to acces S3 bucket:
+
+        * In AWS account, open IAM service
+        * Create a grouo for the user, ideally use a name related with the project
+        * Create a policy used to give fulla access to the S3 bucket and attach it to the group
+        * Create a user and add them to the group
+        * Download the csv file which contains the user access key and the secret key which will be used to authenticate them from Django app.
+
+    * Connect Django to S3 bucket and static files to S3 bucket:
+
+        * In the Gitpod termina, install boto 3 and django-storages
+        * Freeze them into requirements.txt file so they get installed on Heroku upon deployment.
+        * Add 'storages' to 'installed apps' in settings.py
+        * To connect Django to S3: add the below code in settings.py 
+
+        ![connect Django to S3](#)
+
+    * In Heroku app config vars- add the following keys: USE_AWS(value=True), AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY (values from the csv file).
+
+    * Remove 'disable collectstatic' variable: Django will collectstatic files automatically and upload them to S3.
+
+    * In the main project directory in Gitpod, create a file calles 'custom_storages.py' and add the following code to tell Django to use S3 to store static and media files:
+
+        ![S3 store static media files](#)
+
+    * Commit changes to Github.
+
+    * Heroku build log should show all static files were collected successfully.
+
+    * AWS S3 bucket will have a static folder which will contain all the project static files.
+
+6. Add media files to S3 bucket:
+
+    * Open up AWS project bucket.
+
+    * Create a new folder called 'media'.
+
+    * Upload all images used on site and grant public read access.
+
+7. Final steps:
+
+    * Add Stripe keys ( obtained from stripe account > developers > API keys) to Heroku app config vars
+
+    * Create a new webhook endpoint that sends webhooks to the Heroku app rather than to the Gitpod workspace.
+
+    * Add webhook signing secret to Heroku app config vars.
+
 
 ## Credits
 
@@ -207,7 +329,7 @@ Once code changes have been completed and tested on localhost, the application c
 
 * Code Institute Slack Community: For troubleshooting and FAQ.
 
-* Django documentation: For clarifying all the doubts
+* Django documentation: For clarifying all the doubts.
 
 * Stack Overflow: For troubleshooting and FAQ.
 
@@ -220,8 +342,11 @@ Once code changes have been completed and tested on localhost, the application c
 ### 1. Technologies Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wiki")
+
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wiki")
+
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript "Link to JavaScript Wiki")
+
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Link to Python Wiki")
 
 ### 2. Frameworks, Libraries & Programs Used
@@ -269,6 +394,8 @@ Once code changes have been completed and tested on localhost, the application c
 - [Canva](!https://www.canva.com/) : Helped on the making of the logo and the image for the icon.
 
 - [JSON formatter](!https://jsonformatter.org/): Checked and validated the .json files (categories.json and products.json)
+
+- [CSS Formatter](!https://www.cleancss.com/css-beautify/): Beautify the CSS files
 
 - [jQuery CDN](!https://releases.jquery.com/): Used jQuery CDN for the project.
 
