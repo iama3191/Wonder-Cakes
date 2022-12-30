@@ -266,6 +266,10 @@ I have tested that this application works using Mackboor Air(Retina, 13-inch, 20
 
 * Google Version 105.0.5195.125 (Official Build) (arm64)
 
+This tests were made with the deployed site on a regular browser and on incognito.
+
+
+
 ## 3. Bugs and issues
 
 | Problem                                                                                                                                                                                                                                                           | Solution                                                                                                                            |
