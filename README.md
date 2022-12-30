@@ -133,12 +133,17 @@
 
 I have tested that this application works using Mackboor Air(Retina, 13-inch, 2020), with macOS Monterey 12.6 installed, using the following browsers.
 
-* Safari Version 16.0 (17614.1.25.9.10, 17614) 
 * Google Version 105.0.5195.125 (Official Build) (arm64)
 
 ## 3. Bugs and issues
 
 ## 4. Validator testing
+
+### [W3 HTML Validator](https://validator.w3.org/#validate_by_input)
+
+### [CC3 W3 Validator](https://jigsaw.w3.org/css-validator)
+
+### [JShint Validator](https://jshint.com/)
 
 ## Deplpoyment
 
@@ -216,7 +221,7 @@ The regular process for deployment can be found on the CI Cheat Sheet from the F
 
 2. Create a new Heroku app
 
-    * Go to [Heorku Dashbord](https://dashboard.heroku.com/) and click 'New' to create a new app.
+    * Go to [Heroku Dashbord](https://dashboard.heroku.com/) and click 'New' to create a new app.
 
     * Give your app a name and select the region closest to you. When you’re done, click Create app to confirm.
 

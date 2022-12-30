@@ -64,10 +64,9 @@ input[type=email] {
 }
 /*************************** Hero image */
 .hero-image {
-    height: calc(100vh - 150px);
+    height: 70vh;
+
     width:100%;
-   /* display: flex;
-    */
     background: url('/media/hero-image-background.jpg') no-repeat center center;
     background-color: rgb(174 230 242);
     background-size: cover;
