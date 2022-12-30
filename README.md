@@ -269,6 +269,12 @@ I have tested that this application works using Mackboor Air(Retina, 13-inch, 20
 This tests were made with the deployed site on a regular browser and on incognito.
 
 
+## TEST 1
+
+Regular Browser
+
+![Mobile](README_documentation/browser testing/test1-mobile-regular-browser.png)
+
 
 ## 3. Bugs and issues
 
